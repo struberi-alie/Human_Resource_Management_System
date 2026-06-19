@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DB01EE13-C416-42F5-8D90-D57F916C58E5}</ProjectGuid>
+    <ProjectGuid>{79A775B6-1423-C076-660F-5852FDDA2F4D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Human_Resource_Management_System</RootNamespace>
     <AssemblyName>Human_Resource_Management_System</AssemblyName>
@@ -101,6 +101,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaveRequest.Designer.cs">
+      <DependentUpon>LeaveRequest.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

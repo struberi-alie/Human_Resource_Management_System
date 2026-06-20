@@ -1,6 +1,6 @@
 ﻿namespace Human_Resource_Management_System
 {
-    partial class Form1
+    partial class frmMainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,123 +30,58 @@
         {
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.pnlMainContainer = new System.Windows.Forms.Panel();
-            this.lblDashboard = new System.Windows.Forms.Label();
-            this.lblEmployee = new System.Windows.Forms.Label();
-            this.lblPayroll = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnLeaveRequests = new System.Windows.Forms.Button();
+            this.btnPayroll = new System.Windows.Forms.Button();
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.btnDepartment = new System.Windows.Forms.Button();
+            this.btnAttendance = new System.Windows.Forms.Button();
+            this.btnSetting = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.pnlSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSidebar
             // 
-            this.pnlSidebar.Controls.Add(this.btnLeaveRequests);
-            this.pnlSidebar.Controls.Add(this.label6);
-            this.pnlSidebar.Controls.Add(this.label5);
-            this.pnlSidebar.Controls.Add(this.label3);
-            this.pnlSidebar.Controls.Add(this.label2);
+            this.pnlSidebar.BackColor = System.Drawing.Color.Teal;
+            this.pnlSidebar.Controls.Add(this.btnLogOut);
             this.pnlSidebar.Controls.Add(this.label1);
-            this.pnlSidebar.Controls.Add(this.lblPayroll);
-            this.pnlSidebar.Controls.Add(this.lblEmployee);
-            this.pnlSidebar.Controls.Add(this.lblDashboard);
+            this.pnlSidebar.Controls.Add(this.btnDashboard);
+            this.pnlSidebar.Controls.Add(this.btnSetting);
+            this.pnlSidebar.Controls.Add(this.btnAttendance);
+            this.pnlSidebar.Controls.Add(this.btnDepartment);
+            this.pnlSidebar.Controls.Add(this.btnEmployee);
+            this.pnlSidebar.Controls.Add(this.btnPayroll);
+            this.pnlSidebar.Controls.Add(this.btnLeaveRequests);
+            this.pnlSidebar.Controls.Add(this.label5);
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(200, 453);
+            this.pnlSidebar.Size = new System.Drawing.Size(496, 1081);
             this.pnlSidebar.TabIndex = 0;
             this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
             // 
             // pnlMainContainer
             // 
-            this.pnlMainContainer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlMainContainer.Location = new System.Drawing.Point(204, 0);
+            this.pnlMainContainer.Location = new System.Drawing.Point(502, 0);
+            this.pnlMainContainer.Margin = new System.Windows.Forms.Padding(0);
             this.pnlMainContainer.Name = "pnlMainContainer";
-            this.pnlMainContainer.Size = new System.Drawing.Size(596, 450);
+            this.pnlMainContainer.Size = new System.Drawing.Size(1400, 1064);
             this.pnlMainContainer.TabIndex = 0;
             this.pnlMainContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMainContainer_Paint);
-            // 
-            // lblDashboard
-            // 
-            this.lblDashboard.AutoSize = true;
-            this.lblDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDashboard.Location = new System.Drawing.Point(23, 56);
-            this.lblDashboard.Name = "lblDashboard";
-            this.lblDashboard.Size = new System.Drawing.Size(91, 20);
-            this.lblDashboard.TabIndex = 0;
-            this.lblDashboard.Text = "Dashboard";
-            // 
-            // lblEmployee
-            // 
-            this.lblEmployee.AutoSize = true;
-            this.lblEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployee.Location = new System.Drawing.Point(23, 101);
-            this.lblEmployee.Name = "lblEmployee";
-            this.lblEmployee.Size = new System.Drawing.Size(82, 20);
-            this.lblEmployee.TabIndex = 1;
-            this.lblEmployee.Text = "Employee";
-            // 
-            // lblPayroll
-            // 
-            this.lblPayroll.AutoSize = true;
-            this.lblPayroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPayroll.Location = new System.Drawing.Point(23, 174);
-            this.lblPayroll.Name = "lblPayroll";
-            this.lblPayroll.Size = new System.Drawing.Size(60, 20);
-            this.lblPayroll.TabIndex = 3;
-            this.lblPayroll.Text = "Payroll";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 277);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Departments";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 308);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Attendance";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 343);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Setting";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 238);
+            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(2, 518);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 20);
+            this.label5.Size = new System.Drawing.Size(85, 30);
             this.label5.TabIndex = 8;
             this.label5.Text = "ADMIN";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 18);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 20);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "NAVIGATION";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnLeaveRequests
             // 
@@ -154,24 +89,154 @@
             this.btnLeaveRequests.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLeaveRequests.FlatAppearance.BorderSize = 0;
             this.btnLeaveRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeaveRequests.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeaveRequests.Location = new System.Drawing.Point(16, 131);
+            this.btnLeaveRequests.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLeaveRequests.ForeColor = System.Drawing.Color.White;
+            this.btnLeaveRequests.Location = new System.Drawing.Point(-3, 281);
             this.btnLeaveRequests.Name = "btnLeaveRequests";
-            this.btnLeaveRequests.Size = new System.Drawing.Size(133, 32);
+            this.btnLeaveRequests.Size = new System.Drawing.Size(499, 62);
             this.btnLeaveRequests.TabIndex = 10;
             this.btnLeaveRequests.Text = "Leave Request";
+            this.btnLeaveRequests.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLeaveRequests.UseVisualStyleBackColor = true;
             this.btnLeaveRequests.Click += new System.EventHandler(this.btnLeaveRequests_Click);
             // 
-            // Form1
+            // btnPayroll
+            // 
+            this.btnPayroll.AutoSize = true;
+            this.btnPayroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPayroll.FlatAppearance.BorderSize = 0;
+            this.btnPayroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPayroll.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayroll.ForeColor = System.Drawing.Color.White;
+            this.btnPayroll.Location = new System.Drawing.Point(0, 349);
+            this.btnPayroll.Name = "btnPayroll";
+            this.btnPayroll.Size = new System.Drawing.Size(499, 57);
+            this.btnPayroll.TabIndex = 11;
+            this.btnPayroll.Text = "Payroll";
+            this.btnPayroll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPayroll.UseVisualStyleBackColor = true;
+            this.btnPayroll.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnEmployee
+            // 
+            this.btnEmployee.AutoSize = true;
+            this.btnEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEmployee.FlatAppearance.BorderSize = 0;
+            this.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployee.ForeColor = System.Drawing.Color.White;
+            this.btnEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEmployee.Location = new System.Drawing.Point(-3, 216);
+            this.btnEmployee.Name = "btnEmployee";
+            this.btnEmployee.Size = new System.Drawing.Size(502, 59);
+            this.btnEmployee.TabIndex = 11;
+            this.btnEmployee.Text = "Employee";
+            this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmployee.UseVisualStyleBackColor = true;
+            this.btnEmployee.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnDepartment
+            // 
+            this.btnDepartment.AutoSize = true;
+            this.btnDepartment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDepartment.FlatAppearance.BorderSize = 0;
+            this.btnDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDepartment.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepartment.ForeColor = System.Drawing.Color.White;
+            this.btnDepartment.Location = new System.Drawing.Point(0, 562);
+            this.btnDepartment.Name = "btnDepartment";
+            this.btnDepartment.Size = new System.Drawing.Size(499, 56);
+            this.btnDepartment.TabIndex = 12;
+            this.btnDepartment.Text = "Department";
+            this.btnDepartment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDepartment.UseVisualStyleBackColor = true;
+            // 
+            // btnAttendance
+            // 
+            this.btnAttendance.AutoSize = true;
+            this.btnAttendance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAttendance.FlatAppearance.BorderSize = 0;
+            this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAttendance.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnAttendance.Location = new System.Drawing.Point(-3, 624);
+            this.btnAttendance.Name = "btnAttendance";
+            this.btnAttendance.Size = new System.Drawing.Size(499, 57);
+            this.btnAttendance.TabIndex = 13;
+            this.btnAttendance.Text = "Attendance";
+            this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAttendance.UseVisualStyleBackColor = true;
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.AutoSize = true;
+            this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.ForeColor = System.Drawing.Color.White;
+            this.btnSetting.Location = new System.Drawing.Point(0, 687);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(496, 57);
+            this.btnSetting.TabIndex = 14;
+            this.btnSetting.Text = "Setting";
+            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.AutoSize = true;
+            this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.Location = new System.Drawing.Point(-3, 148);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(502, 62);
+            this.btnDashboard.TabIndex = 15;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(2, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 30);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "NAVIGATION";
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.AutoSize = true;
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Location = new System.Drawing.Point(-3, 976);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(496, 57);
+            this.btnLogOut.TabIndex = 17;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            // 
+            // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.pnlMainContainer);
             this.Controls.Add(this.pnlSidebar);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmMainForm";
+            this.Text = "HRMS";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlSidebar.ResumeLayout(false);
             this.pnlSidebar.PerformLayout();
@@ -183,15 +248,16 @@
 
         private System.Windows.Forms.Panel pnlSidebar;
         private System.Windows.Forms.Panel pnlMainContainer;
-        private System.Windows.Forms.Label lblDashboard;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblPayroll;
-        private System.Windows.Forms.Label lblEmployee;
         private System.Windows.Forms.Button btnLeaveRequests;
+        private System.Windows.Forms.Button btnPayroll;
+        private System.Windows.Forms.Button btnEmployee;
+        private System.Windows.Forms.Button btnSetting;
+        private System.Windows.Forms.Button btnAttendance;
+        private System.Windows.Forms.Button btnDepartment;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Label label1;
     }
 }
 

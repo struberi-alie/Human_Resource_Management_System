@@ -59,7 +59,7 @@ namespace Human_Resource_Management_System
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-            string filter = textBox1.Text;
+            string filter = txtSearch.Text;
 
             var dt = dgvLeaveRequests.DataSource as DataTable;
             if (dt != null)
@@ -95,6 +95,11 @@ namespace Human_Resource_Management_System
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

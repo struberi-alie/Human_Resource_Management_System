@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.pnlSidebar = new System.Windows.Forms.Panel();
-            this.pnlMainContainer = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnLeaveRequests = new System.Windows.Forms.Button();
-            this.btnPayroll = new System.Windows.Forms.Button();
-            this.btnEmployee = new System.Windows.Forms.Button();
-            this.btnDepartment = new System.Windows.Forms.Button();
-            this.btnAttendance = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.btnSetting = new System.Windows.Forms.Button();
+            this.btnAttendance = new System.Windows.Forms.Button();
+            this.btnDepartment = new System.Windows.Forms.Button();
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.btnPayroll = new System.Windows.Forms.Button();
+            this.btnLeaveRequests = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pnlMainContainer = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,60 +62,99 @@
             this.pnlSidebar.TabIndex = 0;
             this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
             // 
-            // pnlMainContainer
+            // btnLogOut
             // 
-            this.pnlMainContainer.Location = new System.Drawing.Point(502, 0);
-            this.pnlMainContainer.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlMainContainer.Name = "pnlMainContainer";
-            this.pnlMainContainer.Size = new System.Drawing.Size(1400, 1064);
-            this.pnlMainContainer.TabIndex = 0;
-            this.pnlMainContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMainContainer_Paint);
+            this.btnLogOut.AutoSize = true;
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Location = new System.Drawing.Point(-3, 976);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(496, 57);
+            this.btnLogOut.TabIndex = 17;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(2, 518);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 30);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "ADMIN";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(2, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 30);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "NAVIGATION";
             // 
-            // btnLeaveRequests
+            // btnDashboard
             // 
-            this.btnLeaveRequests.AutoSize = true;
-            this.btnLeaveRequests.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLeaveRequests.FlatAppearance.BorderSize = 0;
-            this.btnLeaveRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeaveRequests.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeaveRequests.ForeColor = System.Drawing.Color.White;
-            this.btnLeaveRequests.Location = new System.Drawing.Point(-3, 281);
-            this.btnLeaveRequests.Name = "btnLeaveRequests";
-            this.btnLeaveRequests.Size = new System.Drawing.Size(499, 62);
-            this.btnLeaveRequests.TabIndex = 10;
-            this.btnLeaveRequests.Text = "Leave Request";
-            this.btnLeaveRequests.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLeaveRequests.UseVisualStyleBackColor = true;
-            this.btnLeaveRequests.Click += new System.EventHandler(this.btnLeaveRequests_Click);
+            this.btnDashboard.AutoSize = true;
+            this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.Location = new System.Drawing.Point(-3, 148);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(502, 62);
+            this.btnDashboard.TabIndex = 15;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // btnPayroll
+            // btnSetting
             // 
-            this.btnPayroll.AutoSize = true;
-            this.btnPayroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnPayroll.FlatAppearance.BorderSize = 0;
-            this.btnPayroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPayroll.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPayroll.ForeColor = System.Drawing.Color.White;
-            this.btnPayroll.Location = new System.Drawing.Point(0, 349);
-            this.btnPayroll.Name = "btnPayroll";
-            this.btnPayroll.Size = new System.Drawing.Size(499, 57);
-            this.btnPayroll.TabIndex = 11;
-            this.btnPayroll.Text = "Payroll";
-            this.btnPayroll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayroll.UseVisualStyleBackColor = true;
-            this.btnPayroll.Click += new System.EventHandler(this.button1_Click);
+            this.btnSetting.AutoSize = true;
+            this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.ForeColor = System.Drawing.Color.White;
+            this.btnSetting.Location = new System.Drawing.Point(0, 687);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(496, 57);
+            this.btnSetting.TabIndex = 14;
+            this.btnSetting.Text = "Setting";
+            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnAttendance
+            // 
+            this.btnAttendance.AutoSize = true;
+            this.btnAttendance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAttendance.FlatAppearance.BorderSize = 0;
+            this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAttendance.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnAttendance.Location = new System.Drawing.Point(-3, 624);
+            this.btnAttendance.Name = "btnAttendance";
+            this.btnAttendance.Size = new System.Drawing.Size(499, 57);
+            this.btnAttendance.TabIndex = 13;
+            this.btnAttendance.Text = "Attendance";
+            this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAttendance.UseVisualStyleBackColor = true;
+            // 
+            // btnDepartment
+            // 
+            this.btnDepartment.AutoSize = true;
+            this.btnDepartment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDepartment.FlatAppearance.BorderSize = 0;
+            this.btnDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDepartment.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepartment.ForeColor = System.Drawing.Color.White;
+            this.btnDepartment.Location = new System.Drawing.Point(0, 562);
+            this.btnDepartment.Name = "btnDepartment";
+            this.btnDepartment.Size = new System.Drawing.Size(499, 56);
+            this.btnDepartment.TabIndex = 12;
+            this.btnDepartment.Text = "Department";
+            this.btnDepartment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDepartment.UseVisualStyleBackColor = true;
             // 
             // btnEmployee
             // 
@@ -135,98 +174,60 @@
             this.btnEmployee.UseVisualStyleBackColor = true;
             this.btnEmployee.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnDepartment
+            // btnPayroll
             // 
-            this.btnDepartment.AutoSize = true;
-            this.btnDepartment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDepartment.FlatAppearance.BorderSize = 0;
-            this.btnDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDepartment.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepartment.ForeColor = System.Drawing.Color.White;
-            this.btnDepartment.Location = new System.Drawing.Point(0, 562);
-            this.btnDepartment.Name = "btnDepartment";
-            this.btnDepartment.Size = new System.Drawing.Size(499, 56);
-            this.btnDepartment.TabIndex = 12;
-            this.btnDepartment.Text = "Department";
-            this.btnDepartment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartment.UseVisualStyleBackColor = true;
+            this.btnPayroll.AutoSize = true;
+            this.btnPayroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPayroll.FlatAppearance.BorderSize = 0;
+            this.btnPayroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPayroll.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayroll.ForeColor = System.Drawing.Color.White;
+            this.btnPayroll.Location = new System.Drawing.Point(0, 349);
+            this.btnPayroll.Name = "btnPayroll";
+            this.btnPayroll.Size = new System.Drawing.Size(499, 57);
+            this.btnPayroll.TabIndex = 11;
+            this.btnPayroll.Text = "Payroll";
+            this.btnPayroll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPayroll.UseVisualStyleBackColor = true;
+            this.btnPayroll.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnAttendance
+            // btnLeaveRequests
             // 
-            this.btnAttendance.AutoSize = true;
-            this.btnAttendance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAttendance.FlatAppearance.BorderSize = 0;
-            this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAttendance.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAttendance.ForeColor = System.Drawing.Color.White;
-            this.btnAttendance.Location = new System.Drawing.Point(-3, 624);
-            this.btnAttendance.Name = "btnAttendance";
-            this.btnAttendance.Size = new System.Drawing.Size(499, 57);
-            this.btnAttendance.TabIndex = 13;
-            this.btnAttendance.Text = "Attendance";
-            this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAttendance.UseVisualStyleBackColor = true;
+            this.btnLeaveRequests.AutoSize = true;
+            this.btnLeaveRequests.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLeaveRequests.FlatAppearance.BorderSize = 0;
+            this.btnLeaveRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeaveRequests.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLeaveRequests.ForeColor = System.Drawing.Color.White;
+            this.btnLeaveRequests.Location = new System.Drawing.Point(-3, 281);
+            this.btnLeaveRequests.Name = "btnLeaveRequests";
+            this.btnLeaveRequests.Size = new System.Drawing.Size(499, 62);
+            this.btnLeaveRequests.TabIndex = 10;
+            this.btnLeaveRequests.Text = "Leave Request";
+            this.btnLeaveRequests.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLeaveRequests.UseVisualStyleBackColor = true;
+            this.btnLeaveRequests.Click += new System.EventHandler(this.btnLeaveRequests_Click);
             // 
-            // btnSetting
+            // label5
             // 
-            this.btnSetting.AutoSize = true;
-            this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetting.ForeColor = System.Drawing.Color.White;
-            this.btnSetting.Location = new System.Drawing.Point(0, 687);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(496, 57);
-            this.btnSetting.TabIndex = 14;
-            this.btnSetting.Text = "Setting";
-            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.UseVisualStyleBackColor = true;
-            this.btnSetting.Click += new System.EventHandler(this.button5_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(2, 518);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 30);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "ADMIN";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // btnDashboard
+            // pnlMainContainer
             // 
-            this.btnDashboard.AutoSize = true;
-            this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.Location = new System.Drawing.Point(-3, 148);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(502, 62);
-            this.btnDashboard.TabIndex = 15;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(2, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 30);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "NAVIGATION";
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.AutoSize = true;
-            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLogOut.FlatAppearance.BorderSize = 0;
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.ForeColor = System.Drawing.Color.White;
-            this.btnLogOut.Location = new System.Drawing.Point(-3, 976);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(496, 57);
-            this.btnLogOut.TabIndex = 17;
-            this.btnLogOut.Text = "Log Out";
-            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.pnlMainContainer.Location = new System.Drawing.Point(502, 0);
+            this.pnlMainContainer.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlMainContainer.Name = "pnlMainContainer";
+            this.pnlMainContainer.Size = new System.Drawing.Size(1400, 1064);
+            this.pnlMainContainer.TabIndex = 0;
+            this.pnlMainContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMainContainer_Paint);
             // 
             // frmMainForm
             // 

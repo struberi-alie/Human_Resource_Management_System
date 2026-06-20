@@ -75,7 +75,11 @@ namespace Human_Resource_Management_System
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // Create an instance of your UserControl
+            dashboard dashb = new dashboard();
 
+            // Load it into the container
+            LoadUserControl(dashb);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -84,6 +88,11 @@ namespace Human_Resource_Management_System
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,0 +1,6 @@
+/* Visual Studio Settings File */
+{
+  "sourceControl.gitSettings.enablePushForce": true,
+  "sourceControl.gitSettings.checkOutBranchOnActivation": true,
+  "sourceControl.gitSettings.repositoryWindowPersistence": true
+}

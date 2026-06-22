@@ -123,6 +123,12 @@
     <Compile Include="ucLeaveRequest.Designer.cs">
       <DependentUpon>ucLeaveRequest.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucPayroll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPayroll.Designer.cs">
+      <DependentUpon>ucPayroll.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +149,9 @@
     </Compile>
     <EmbeddedResource Include="ucLeaveRequest.resx">
       <DependentUpon>ucLeaveRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPayroll.resx">
+      <DependentUpon>ucPayroll.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

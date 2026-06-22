@@ -94,7 +94,13 @@ namespace Human_Resource_Management_System
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            {
+                // Create an instance of your UserControl
+                MainDashboard MainDashboard = new MainDashboard();
 
+                // Load it into the container
+                LoadUserControl(MainDashboard);
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Human_Resource_Management_System
+<<<<<<< HEAD
 { 
     public partial class MainDashboard : UserControl
     {
@@ -77,11 +78,31 @@ namespace Human_Resource_Management_System
         private void lstbxRecentActivity_SelectedIndexChanged(object sender, EventArgs e)
         {
        
+=======
+{
+    public partial class MainDashboard : UserControl
+    {
+        public MainDashboard()
+        {
+            InitializeComponent();
+>>>>>>> 7b13b47560c2723189423ec0042135fdd0e90eec
         }
 
         private void pnltotalemployee_Paint(object sender, PaintEventArgs e)
         {
+<<<<<<< HEAD
         
         }
     }
 }
+=======
+
+        }
+
+        private void lstbxRecentActivity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}
+>>>>>>> 7b13b47560c2723189423ec0042135fdd0e90eec

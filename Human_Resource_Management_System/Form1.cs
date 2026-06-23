@@ -64,8 +64,7 @@ namespace Human_Resource_Management_System
             HighlightButton(btnLeaveRequests);
             // Create an instance of your UserControl
             ucLeaveRequestUD leavePage = new ucLeaveRequestUD();
-
-]            LoadUserControl(leavePage);
+            LoadUserControl(leavePage);
         }
 
 
@@ -106,6 +105,15 @@ namespace Human_Resource_Management_System
                 // Load it into the container
                 LoadUserControl(MainDashboard);
             }
+        }
+
+        private void frmMainForm_Load(object sender, EventArgs e)
+        {
+            LoadUserControl(null);
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
         }
     }
 }

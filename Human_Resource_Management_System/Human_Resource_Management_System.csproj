@@ -135,6 +135,18 @@
     <Compile Include="ucLeaveRequest.Designer.cs">
       <DependentUpon>ucLeaveRequest.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucPayroll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPayroll.Designer.cs">
+      <DependentUpon>ucPayroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLeaveRequestUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLeaveRequestUD.Designer.cs">
+      <DependentUpon>ucLeaveRequestUD.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ash.resx">
       <DependentUpon>Ash.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucLeaveRequest.resx">
       <DependentUpon>ucLeaveRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLeaveRequestUD.resx">
+      <DependentUpon>ucLeaveRequestUD.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

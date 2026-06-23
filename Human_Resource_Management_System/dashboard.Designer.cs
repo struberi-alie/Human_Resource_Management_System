@@ -70,6 +70,8 @@
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reg_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.monthly_salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlStudentDetails.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -77,6 +79,7 @@
             this.panel3.SuspendLayout();
             this.pnlStudentList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,7 +90,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(18, 388);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1342, 41);
+            this.panel1.Size = new System.Drawing.Size(1142, 41);
             this.panel1.TabIndex = 10;
             // 
             // label4
@@ -126,7 +129,7 @@
             this.pnlStudentDetails.Controls.Add(this.txtStudentID);
             this.pnlStudentDetails.Location = new System.Drawing.Point(17, 50);
             this.pnlStudentDetails.Name = "pnlStudentDetails";
-            this.pnlStudentDetails.Size = new System.Drawing.Size(1342, 314);
+            this.pnlStudentDetails.Size = new System.Drawing.Size(1142, 314);
             this.pnlStudentDetails.TabIndex = 9;
             // 
             // label1
@@ -134,7 +137,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(549, 234);
+            this.label1.Location = new System.Drawing.Point(355, 232);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 27;
@@ -148,17 +151,17 @@
             "Active",
             "Leave",
             "Inactive"});
-            this.cmbStatus.Location = new System.Drawing.Point(552, 264);
+            this.cmbStatus.Location = new System.Drawing.Point(358, 262);
             this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(513, 24);
+            this.cmbStatus.Size = new System.Drawing.Size(286, 24);
             this.cmbStatus.TabIndex = 26;
             this.cmbStatus.Text = "- Select Status-";
             // 
             // dtpHD
             // 
-            this.dtpHD.Location = new System.Drawing.Point(552, 190);
+            this.dtpHD.Location = new System.Drawing.Point(358, 188);
             this.dtpHD.Name = "dtpHD";
-            this.dtpHD.Size = new System.Drawing.Size(513, 22);
+            this.dtpHD.Size = new System.Drawing.Size(286, 22);
             this.dtpHD.TabIndex = 25;
             // 
             // txtLastName
@@ -168,7 +171,7 @@
             this.txtLastName.ForeColor = System.Drawing.Color.DimGray;
             this.txtLastName.Location = new System.Drawing.Point(26, 120);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(480, 22);
+            this.txtLastName.Size = new System.Drawing.Size(281, 22);
             this.txtLastName.TabIndex = 24;
             this.txtLastName.Text = " Surname";
             // 
@@ -188,7 +191,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(554, 161);
+            this.label13.Location = new System.Drawing.Point(360, 159);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(70, 13);
             this.label13.TabIndex = 22;
@@ -199,7 +202,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(549, 21);
+            this.label11.Location = new System.Drawing.Point(355, 19);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(66, 13);
             this.label11.TabIndex = 20;
@@ -222,7 +225,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(549, 90);
+            this.label9.Location = new System.Drawing.Point(355, 88);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 13);
             this.label9.TabIndex = 18;
@@ -260,7 +263,7 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(1077, 34);
+            this.panel2.Location = new System.Drawing.Point(784, 21);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(238, 268);
             this.panel2.TabIndex = 8;
@@ -338,7 +341,7 @@
             this.txtPhone.ForeColor = System.Drawing.Color.DimGray;
             this.txtPhone.Location = new System.Drawing.Point(26, 264);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(480, 22);
+            this.txtPhone.Size = new System.Drawing.Size(281, 22);
             this.txtPhone.TabIndex = 7;
             this.txtPhone.Text = "  09XX-XXX-XXXX";
             // 
@@ -347,9 +350,9 @@
             this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFirstName.ForeColor = System.Drawing.Color.DimGray;
-            this.txtFirstName.Location = new System.Drawing.Point(552, 45);
+            this.txtFirstName.Location = new System.Drawing.Point(358, 43);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(480, 22);
+            this.txtFirstName.Size = new System.Drawing.Size(286, 22);
             this.txtFirstName.TabIndex = 6;
             this.txtFirstName.Text = "First Name";
             // 
@@ -362,9 +365,9 @@
             "Marketing/Sales Dpt",
             "Research and Development Dept",
             "Operations Dept"});
-            this.cmbDepartment.Location = new System.Drawing.Point(552, 120);
+            this.cmbDepartment.Location = new System.Drawing.Point(358, 118);
             this.cmbDepartment.Name = "cmbDepartment";
-            this.cmbDepartment.Size = new System.Drawing.Size(513, 24);
+            this.cmbDepartment.Size = new System.Drawing.Size(286, 24);
             this.cmbDepartment.TabIndex = 3;
             this.cmbDepartment.Text = "   - Select Department -";
             this.cmbDepartment.SelectedIndexChanged += new System.EventHandler(this.cmbDepartment_SelectedIndexChanged);
@@ -374,7 +377,7 @@
             this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
             this.txtEmail.Location = new System.Drawing.Point(26, 190);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(513, 22);
+            this.txtEmail.Size = new System.Drawing.Size(281, 22);
             this.txtEmail.TabIndex = 1;
             this.txtEmail.Text = "ex. juandelacruz@email.com";
             // 
@@ -383,7 +386,7 @@
             this.txtStudentID.ForeColor = System.Drawing.Color.DimGray;
             this.txtStudentID.Location = new System.Drawing.Point(26, 45);
             this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(513, 22);
+            this.txtStudentID.Size = new System.Drawing.Size(281, 22);
             this.txtStudentID.TabIndex = 0;
             this.txtStudentID.Text = "ex. XXXXX";
             // 
@@ -395,7 +398,7 @@
             this.pnlLabel1.Controls.Add(this.label3);
             this.pnlLabel1.Location = new System.Drawing.Point(3, 3);
             this.pnlLabel1.Name = "pnlLabel1";
-            this.pnlLabel1.Size = new System.Drawing.Size(1365, 41);
+            this.pnlLabel1.Size = new System.Drawing.Size(1165, 41);
             this.pnlLabel1.TabIndex = 8;
             // 
             // label3
@@ -451,7 +454,7 @@
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(17, 511);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1342, 41);
+            this.panel3.Size = new System.Drawing.Size(1142, 0);
             this.panel3.TabIndex = 12;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -487,7 +490,7 @@
             this.pnlStudentList.Controls.Add(this.txtSearch);
             this.pnlStudentList.Location = new System.Drawing.Point(18, 435);
             this.pnlStudentList.Name = "pnlStudentList";
-            this.pnlStudentList.Size = new System.Drawing.Size(1342, 53);
+            this.pnlStudentList.Size = new System.Drawing.Size(1142, 53);
             this.pnlStudentList.TabIndex = 11;
             // 
             // dgvEmployee
@@ -515,7 +518,7 @@
             this.dgvEmployee.RowHeadersWidth = 51;
             this.dgvEmployee.RowTemplate.Height = 24;
             this.dgvEmployee.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvEmployee.Size = new System.Drawing.Size(1341, 358);
+            this.dgvEmployee.Size = new System.Drawing.Size(1141, 315);
             this.dgvEmployee.TabIndex = 7;
             this.dgvEmployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudents_CellContentClick);
             // 
@@ -584,18 +587,42 @@
             this.monthly_salary.Name = "monthly_salary";
             this.monthly_salary.Width = 158;
             // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.Teal;
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Location = new System.Drawing.Point(17, 511);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1142, 41);
+            this.panel4.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(12, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "| Employees";
+            // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlStudentDetails);
             this.Controls.Add(this.pnlLabel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnlStudentList);
             this.Controls.Add(this.dgvEmployee);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "dashboard";
-            this.Size = new System.Drawing.Size(1400, 1064);
+            this.Size = new System.Drawing.Size(1200, 1021);
             this.Load += new System.EventHandler(this.dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -610,6 +637,8 @@
             this.pnlStudentList.ResumeLayout(false);
             this.pnlStudentList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -657,5 +686,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewTextBoxColumn reg_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn monthly_salary;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label2;
     }
 }

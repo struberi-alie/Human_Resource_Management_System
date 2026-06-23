@@ -86,7 +86,7 @@
             this.pnlOnLeaveToday.Controls.Add(this.lblNumOLT);
             this.pnlOnLeaveToday.Location = new System.Drawing.Point(269, 70);
             this.pnlSidebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDeptHeadCount)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dgvDeptHeadCount)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSetting

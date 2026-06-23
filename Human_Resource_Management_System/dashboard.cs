@@ -77,26 +77,7 @@ namespace Human_Resource_Management_System
         //FOR DATA GRID VIEW
         private void dashboard_Load(object sender, EventArgs e)
         {
-            string query = "SELECT empId AS 'Employee ID', firstName AS 'First Name', lastName AS 'Last Name', " +
-                           "emailAddress AS 'Email', phoneNumber AS 'Phone', hireDate AS 'Hire Date', " +
-                           "employmentStatus AS 'Status', monthlySalary AS 'Monthly Salary' " +
-                           "FROM employee";
-
-            using (MySqlConnection conn = DatabaseConnection.GetConnection())
-            {
-                try
-                {
-                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-
-                    dgvEmployee.DataSource = dt;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Database Error: " + ex.Message);
-                }
-            }
+            this.Dock = DockStyle.Fill;
         }
         private void label9_Click(object sender, EventArgs e)
         {
@@ -106,89 +87,21 @@ namespace Human_Resource_Management_System
         //ADD BUTTON
         private void button4_Click(object sender, EventArgs e)
         {
-            // 1. Get data from textboxes
-            string fName = txtFirstName.Text.Trim();
-            string lName = txtLastName.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string phone = txtPhone.Text.Trim();
 
-            // 2. Define the SQL query with parameters (@parameterName)
-            string query = "INSERT INTO employee (firstName, lastName, emailAddress, phoneNumber, hireDate, employmentStatus, regularizationDate, monthlySalary) " +
-                           "VALUES (@fName, @lName, @email, @phone, @hireDate, @status, @regularizationDate, @monthlySalary)";
-
-            using (MySqlConnection conn = DatabaseConnection.GetConnection())
-            {
-                try
-                {
-                    conn.Open();
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
-
-                    // 3. Bind the values to the parameters
-                    cmd.Parameters.AddWithValue("@fName", fName);
-                    cmd.Parameters.AddWithValue("@lName", lName);
-                    cmd.Parameters.AddWithValue("@email", email);
-                    cmd.Parameters.AddWithValue("@phone", phone);
-
-                    // 4. Execute the command
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    if (rowsAffected > 0)
-                    {
-                        MessageBox.Show("Employee added successfully!");
-                        // Refresh your DataGridView to show the new record
-                        dashboard_Load(sender, e);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error adding data: " + ex.Message);
-                }
-            }
         }
 
         private void LoadDepartments()
         {
-            // Optimized query if you have a separate Departments table
-            string query = @"SELECT e.* FROM Employees e 
-                 JOIN Departments d ON e.departmentId = d.departmentId 
-                 WHERE d.deptName = @dept"; using (MySqlConnection conn = DatabaseConnection.GetConnection())
-            {
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                conn.Open();
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                cmbDepartment.Items.Clear();
-                while (reader.Read())
-                {
-                    cmbDepartment.Items.Add(reader["deptName"].ToString());
-                }
-            }
         }
 
         private void cmbDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbDepartment.SelectedIndex == -1) return;
 
-            string selectedDept = cmbDepartment.SelectedItem.ToString();
-
-            FilterEmployeesByDepartment(selectedDept);
         }
 
         private void FilterEmployeesByDepartment(string departmentName)
         {
-            string query = "SELECT * FROM Employee WHERE departmentId = @dept"; ;
 
-            using (MySqlConnection conn = DatabaseConnection.GetConnection())
-            {
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@dept", departmentName);
-
-                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-
-                dgvEmployee.DataSource = dt;
-            }
         }
 
         private void label3_Click(object sender, EventArgs e)

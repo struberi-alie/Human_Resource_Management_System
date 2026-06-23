@@ -33,13 +33,17 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.gbAdd = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtboxID = new System.Windows.Forms.TextBox();
-            this.txtboxName = new System.Windows.Forms.TextBox();
             this.cmbLocation = new System.Windows.Forms.ComboBox();
+            this.txtboxName = new System.Windows.Forms.TextBox();
+            this.txtboxID = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.gbAction = new System.Windows.Forms.GroupBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.gbUpdate = new System.Windows.Forms.GroupBox();
             this.cmbLocationupdate = new System.Windows.Forms.ComboBox();
             this.txtboxNameupdate = new System.Windows.Forms.TextBox();
@@ -47,10 +51,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.dgwDepartmentlist = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,7 +72,7 @@
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 1478);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1719, 70);
             this.panel1.TabIndex = 0;
@@ -96,7 +96,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1377, 51);
             this.panel2.TabIndex = 1;
@@ -128,24 +128,27 @@
             this.gbAdd.TabStop = false;
             this.gbAdd.Text = "Add New Department";
             // 
-            // label3
+            // cmbLocation
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Department ID";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.cmbLocation.FormattingEnabled = true;
+            this.cmbLocation.Location = new System.Drawing.Point(10, 231);
+            this.cmbLocation.Name = "cmbLocation";
+            this.cmbLocation.Size = new System.Drawing.Size(444, 28);
+            this.cmbLocation.TabIndex = 6;
             // 
-            // label4
+            // txtboxName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Department Name";
+            this.txtboxName.Location = new System.Drawing.Point(10, 155);
+            this.txtboxName.Name = "txtboxName";
+            this.txtboxName.Size = new System.Drawing.Size(444, 27);
+            this.txtboxName.TabIndex = 4;
+            // 
+            // txtboxID
+            // 
+            this.txtboxID.Location = new System.Drawing.Point(10, 73);
+            this.txtboxID.Name = "txtboxID";
+            this.txtboxID.Size = new System.Drawing.Size(444, 27);
+            this.txtboxID.TabIndex = 3;
             // 
             // label5
             // 
@@ -156,27 +159,24 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Location";
             // 
-            // txtboxID
+            // label4
             // 
-            this.txtboxID.Location = new System.Drawing.Point(10, 73);
-            this.txtboxID.Name = "txtboxID";
-            this.txtboxID.Size = new System.Drawing.Size(444, 27);
-            this.txtboxID.TabIndex = 3;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 132);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Department Name";
             // 
-            // txtboxName
+            // label3
             // 
-            this.txtboxName.Location = new System.Drawing.Point(10, 155);
-            this.txtboxName.Name = "txtboxName";
-            this.txtboxName.Size = new System.Drawing.Size(444, 27);
-            this.txtboxName.TabIndex = 4;
-            // 
-            // cmbLocation
-            // 
-            this.cmbLocation.FormattingEnabled = true;
-            this.cmbLocation.Location = new System.Drawing.Point(10, 231);
-            this.cmbLocation.Name = "cmbLocation";
-            this.cmbLocation.Size = new System.Drawing.Size(444, 28);
-            this.cmbLocation.TabIndex = 6;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(119, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Department ID";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // gbAction
             // 
@@ -190,6 +190,50 @@
             this.gbAction.TabIndex = 8;
             this.gbAction.TabStop = false;
             this.gbAction.Text = "ACTIONS";
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Gray;
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Location = new System.Drawing.Point(16, 220);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(229, 44);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear/Refresh";
+            this.btnClear.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(16, 138);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(229, 44);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.Turquoise;
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(16, 79);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(229, 44);
+            this.btnUpdate.TabIndex = 1;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.Teal;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(16, 26);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(229, 47);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // gbUpdate
             // 
@@ -255,50 +299,6 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Department ID";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Teal;
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(16, 26);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(229, 47);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Turquoise;
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(16, 79);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(229, 44);
-            this.btnUpdate.TabIndex = 1;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(16, 138);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(229, 44);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.Gray;
-            this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(16, 220);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(229, 44);
-            this.btnClear.TabIndex = 3;
-            this.btnClear.Text = "Clear/Refresh";
-            this.btnClear.UseVisualStyleBackColor = false;
-            // 
             // dgwDepartmentlist
             // 
             this.dgwDepartmentlist.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -314,7 +314,7 @@
             this.dgwDepartmentlist.Name = "dgwDepartmentlist";
             this.dgwDepartmentlist.RowHeadersWidth = 51;
             this.dgwDepartmentlist.RowTemplate.Height = 24;
-            this.dgwDepartmentlist.Size = new System.Drawing.Size(1377, 46);
+            this.dgwDepartmentlist.Size = new System.Drawing.Size(1296, 46);
             this.dgwDepartmentlist.TabIndex = 10;
             // 
             // Column1
@@ -380,9 +380,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucDepartment";
-            this.Size = new System.Drawing.Size(1390, 1329);
+            this.Size = new System.Drawing.Size(1309, 1021);
             this.Load += new System.EventHandler(this.ucDepartment_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

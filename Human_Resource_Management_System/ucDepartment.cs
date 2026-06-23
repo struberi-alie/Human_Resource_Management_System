@@ -19,7 +19,7 @@ namespace Human_Resource_Management_System
 
         private void ucDepartment_Load(object sender, EventArgs e)
         {
-
+            this.Dock = DockStyle.Fill;
         }
 
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)

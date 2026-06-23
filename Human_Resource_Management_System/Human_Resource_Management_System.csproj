@@ -95,6 +95,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ash.Designer.cs">
+      <DependentUpon>Ash.cs</DependentUpon>
+    </Compile>
     <Compile Include="dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <Compile Include="ucLeaveRequest.Designer.cs">
       <DependentUpon>ucLeaveRequest.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ash.resx">
+      <DependentUpon>Ash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +149,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ucLeaveRequest.resx">
       <DependentUpon>ucLeaveRequest.cs</DependentUpon>
@@ -157,6 +167,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40c72b5a8f476a60135d71e450f56a77.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-677653224-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2818%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2818%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54dcd5e1c47654430ca6a7880f9d41bc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1270c9654e2631167a84507d43115565.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

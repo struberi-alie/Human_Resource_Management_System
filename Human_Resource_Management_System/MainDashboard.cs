@@ -19,6 +19,7 @@ namespace Human_Resource_Management_System
 
         private void MainDashboard_Load(object sender, EventArgs e)
         {
+            this.Dock = DockStyle.Fill;
             RefreshDashboardStats();
             LoadRecentActivity();
             LoadDepartmentHeadcount();
@@ -73,6 +74,16 @@ namespace Human_Resource_Management_System
         private void pnltotalemployee_Paint(object sender, PaintEventArgs e)
         {
             // Ilagay ang logic mo rito kung meron
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBarResearchDev_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

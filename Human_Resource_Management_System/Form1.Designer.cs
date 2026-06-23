@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.pnlMainContainer = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnLeaveRequests = new System.Windows.Forms.Button();
+            this.btnPayroll = new System.Windows.Forms.Button();
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.btnDepartment = new System.Windows.Forms.Button();
+            this.btnAttendance = new System.Windows.Forms.Button();
+            this.btnSetting = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -49,7 +59,6 @@
             this.pnlSidebar.Controls.Add(this.btnLogOut);
             this.pnlSidebar.Controls.Add(this.label1);
             this.pnlSidebar.Controls.Add(this.btnDashboard);
-            this.pnlSidebar.Controls.Add(this.btnSetting);
             this.pnlSidebar.Controls.Add(this.btnAttendance);
             this.pnlSidebar.Controls.Add(this.btnDepartment);
             this.pnlSidebar.Controls.Add(this.btnEmployee);
@@ -162,6 +171,7 @@
             this.btnDepartment.Text = "Department";
             this.btnDepartment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDepartment.UseVisualStyleBackColor = true;
+            this.btnDepartment.Click += new System.EventHandler(this.btnDepartment_Click);
             // 
             // btnEmployee
             // 
@@ -265,7 +275,6 @@
         private System.Windows.Forms.Button btnLeaveRequests;
         private System.Windows.Forms.Button btnPayroll;
         private System.Windows.Forms.Button btnEmployee;
-        private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Button btnAttendance;
         private System.Windows.Forms.Button btnDepartment;
         private System.Windows.Forms.Button btnDashboard;

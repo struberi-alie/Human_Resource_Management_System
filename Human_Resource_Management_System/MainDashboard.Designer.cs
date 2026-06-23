@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.btnSetting = new System.Windows.Forms.Button();
             this.btnAttendance = new System.Windows.Forms.Button();
             this.btnDepartment = new System.Windows.Forms.Button();
@@ -41,8 +40,16 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pnltotalemployee = new System.Windows.Forms.Panel();
             this.pnlOnLeaveToday = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNumOLT = new System.Windows.Forms.Label();
             this.pnlReq = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblNumPLR = new System.Windows.Forms.Label();
+            this.lblPendingLeaveRequest = new System.Windows.Forms.Label();
             this.pnlLate = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblNumLT = new System.Windows.Forms.Label();
+            this.lblLateToday = new System.Windows.Forms.Label();
             this.lstbxRecentActivity = new System.Windows.Forms.ListBox();
             this.dgvDeptHeadCount = new System.Windows.Forms.DataGridView();
             this.lblOnLeaveToday = new System.Windows.Forms.Label();
@@ -72,6 +79,7 @@
             this.lblMarketingSalesCount = new System.Windows.Forms.Label();
             this.lblResearchDevCount = new System.Windows.Forms.Label();
             this.lblOperationsCount = new System.Windows.Forms.Label();
+            this.pnlSidebar.SuspendLayout();
             this.pnlOnLeaveToday.SuspendLayout();
             this.pnlReq.SuspendLayout();
             this.pnlLate.SuspendLayout();
@@ -79,15 +87,7 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlOnLeaveToday
             // 
-            this.pnlOnLeaveToday.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.pnlOnLeaveToday.Controls.Add(this.label2);
-            this.pnlOnLeaveToday.Controls.Add(this.lblNumOLT);
-            this.pnlOnLeaveToday.Location = new System.Drawing.Point(269, 70);
-            this.pnlSidebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDeptHeadCount)).BeginInit();
-            this.SuspendLayout();
             // 
             // label1
             // 
@@ -109,10 +109,7 @@
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetting.ForeColor = System.Drawing.Color.White;
-            this.btnSetting.Location = new System.Drawing.Point(0, 558);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(2);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(372, 46);
             this.btnSetting.TabIndex = 14;
             this.btnSetting.Text = "Setting";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -126,10 +123,7 @@
             this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAttendance.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAttendance.ForeColor = System.Drawing.Color.White;
-            this.btnAttendance.Location = new System.Drawing.Point(-2, 507);
-            this.btnAttendance.Margin = new System.Windows.Forms.Padding(2);
             this.btnAttendance.Name = "btnAttendance";
-            this.btnAttendance.Size = new System.Drawing.Size(374, 46);
             this.btnAttendance.TabIndex = 13;
             this.btnAttendance.Text = "Attendance";
             this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -143,10 +137,7 @@
             this.btnDepartment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDepartment.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDepartment.ForeColor = System.Drawing.Color.White;
-            this.btnDepartment.Location = new System.Drawing.Point(0, 457);
-            this.btnDepartment.Margin = new System.Windows.Forms.Padding(2);
             this.btnDepartment.Name = "btnDepartment";
-            this.btnDepartment.Size = new System.Drawing.Size(374, 46);
             this.btnDepartment.TabIndex = 12;
             this.btnDepartment.Text = "Department";
             this.btnDepartment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -161,10 +152,7 @@
             this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployee.ForeColor = System.Drawing.Color.White;
             this.btnEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEmployee.Location = new System.Drawing.Point(-2, 176);
-            this.btnEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(376, 48);
             this.btnEmployee.TabIndex = 11;
             this.btnEmployee.Text = "Employee";
             this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,10 +166,7 @@
             this.btnPayroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPayroll.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayroll.ForeColor = System.Drawing.Color.White;
-            this.btnPayroll.Location = new System.Drawing.Point(0, 284);
-            this.btnPayroll.Margin = new System.Windows.Forms.Padding(2);
             this.btnPayroll.Name = "btnPayroll";
-            this.btnPayroll.Size = new System.Drawing.Size(374, 46);
             this.btnPayroll.TabIndex = 11;
             this.btnPayroll.Text = "Payroll";
             this.btnPayroll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,10 +180,7 @@
             this.btnLeaveRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLeaveRequests.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeaveRequests.ForeColor = System.Drawing.Color.White;
-            this.btnLeaveRequests.Location = new System.Drawing.Point(-2, 228);
-            this.btnLeaveRequests.Margin = new System.Windows.Forms.Padding(2);
             this.btnLeaveRequests.Name = "btnLeaveRequests";
-            this.btnLeaveRequests.Size = new System.Drawing.Size(374, 50);
             this.btnLeaveRequests.TabIndex = 10;
             this.btnLeaveRequests.Text = "Leave Request";
             this.btnLeaveRequests.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -209,10 +191,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(2, 421);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "ADMIN";
             // 
@@ -229,10 +208,7 @@
             this.pnlSidebar.Controls.Add(this.btnPayroll);
             this.pnlSidebar.Controls.Add(this.btnLeaveRequests);
             this.pnlSidebar.Controls.Add(this.label5);
-            this.pnlSidebar.Location = new System.Drawing.Point(-1, -7);
-            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(372, 878);
             this.pnlSidebar.TabIndex = 1;
             // 
             // btnLogOut
@@ -243,10 +219,7 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
-            this.btnLogOut.Location = new System.Drawing.Point(-2, 793);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(372, 46);
             this.btnLogOut.TabIndex = 17;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,10 +234,7 @@
             this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDashboard.Location = new System.Drawing.Point(-2, 120);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(376, 50);
             this.btnDashboard.TabIndex = 15;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -273,19 +243,37 @@
             // pnltotalemployee
             // 
             this.pnltotalemployee.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.pnltotalemployee.Location = new System.Drawing.Point(427, 43);
             this.pnltotalemployee.Name = "pnltotalemployee";
-            this.pnltotalemployee.Size = new System.Drawing.Size(250, 150);
             this.pnltotalemployee.TabIndex = 2;
             this.pnltotalemployee.Paint += new System.Windows.Forms.PaintEventHandler(this.pnltotalemployee_Paint);
             // 
             // pnlOnLeaveToday
             // 
             this.pnlOnLeaveToday.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.pnlOnLeaveToday.Location = new System.Drawing.Point(740, 45);
             this.pnlOnLeaveToday.Name = "pnlOnLeaveToday";
-            this.pnlOnLeaveToday.Size = new System.Drawing.Size(250, 150);
             this.pnlOnLeaveToday.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(64, 138);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(206, 32);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "5.6% of workforce";
+            // 
+            // lblNumOLT
+            // 
+            this.lblNumOLT.AutoSize = true;
+            this.lblNumOLT.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumOLT.Location = new System.Drawing.Point(144, 68);
+            this.lblNumOLT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumOLT.Name = "lblNumOLT";
+            this.lblNumOLT.Size = new System.Drawing.Size(43, 50);
+            this.lblNumOLT.TabIndex = 2;
+            this.lblNumOLT.Text = "8";
             // 
             // pnlReq
             // 
@@ -293,11 +281,42 @@
             this.pnlReq.Controls.Add(this.label4);
             this.pnlReq.Controls.Add(this.lblNumPLR);
             this.pnlReq.Controls.Add(this.lblPendingLeaveRequest);
-            this.pnlReq.Location = new System.Drawing.Point(785, 68);
-            this.pnlReq.Location = new System.Drawing.Point(740, 220);
             this.pnlReq.Name = "pnlReq";
-            this.pnlReq.Size = new System.Drawing.Size(250, 150);
             this.pnlReq.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(117, 140);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 32);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "3 urgent";
+            // 
+            // lblNumPLR
+            // 
+            this.lblNumPLR.AutoSize = true;
+            this.lblNumPLR.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumPLR.Location = new System.Drawing.Point(132, 92);
+            this.lblNumPLR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumPLR.Name = "lblNumPLR";
+            this.lblNumPLR.Size = new System.Drawing.Size(64, 50);
+            this.lblNumPLR.TabIndex = 8;
+            this.lblNumPLR.Text = "12";
+            // 
+            // lblPendingLeaveRequest
+            // 
+            this.lblPendingLeaveRequest.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.lblPendingLeaveRequest.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPendingLeaveRequest.Location = new System.Drawing.Point(3, 2);
+            this.lblPendingLeaveRequest.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPendingLeaveRequest.Name = "lblPendingLeaveRequest";
+            this.lblPendingLeaveRequest.Size = new System.Drawing.Size(327, 143);
+            this.lblPendingLeaveRequest.TabIndex = 7;
+            this.lblPendingLeaveRequest.Text = "PENDING LEAVE REQUEST";
+            this.lblPendingLeaveRequest.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pnlLate
             // 
@@ -305,11 +324,42 @@
             this.pnlLate.Controls.Add(this.label3);
             this.pnlLate.Controls.Add(this.lblNumLT);
             this.pnlLate.Controls.Add(this.lblLateToday);
-            this.pnlLate.Location = new System.Drawing.Point(527, 69);
-            this.pnlLate.Location = new System.Drawing.Point(427, 217);
             this.pnlLate.Name = "pnlLate";
-            this.pnlLate.Size = new System.Drawing.Size(250, 150);
             this.pnlLate.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(73, 139);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(165, 32);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "2 vs yesterday";
+            // 
+            // lblNumLT
+            // 
+            this.lblNumLT.AutoSize = true;
+            this.lblNumLT.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumLT.Location = new System.Drawing.Point(136, 68);
+            this.lblNumLT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumLT.Name = "lblNumLT";
+            this.lblNumLT.Size = new System.Drawing.Size(43, 50);
+            this.lblNumLT.TabIndex = 7;
+            this.lblNumLT.Text = "4";
+            // 
+            // lblLateToday
+            // 
+            this.lblLateToday.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLateToday.Location = new System.Drawing.Point(0, 7);
+            this.lblLateToday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLateToday.Name = "lblLateToday";
+            this.lblLateToday.Size = new System.Drawing.Size(333, 102);
+            this.lblLateToday.TabIndex = 6;
+            this.lblLateToday.Text = "LATE TODAY";
+            this.lblLateToday.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblLateToday.UseWaitCursor = true;
             // 
             // lstbxRecentActivity
             // 
@@ -323,27 +373,21 @@
             this.lstbxRecentActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstbxRecentActivity.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lstbxRecentActivity.FormattingEnabled = true;
-            this.lstbxRecentActivity.Location = new System.Drawing.Point(427, 405);
             this.lstbxRecentActivity.Name = "lstbxRecentActivity";
-            this.lstbxRecentActivity.Size = new System.Drawing.Size(560, 199);
             this.lstbxRecentActivity.TabIndex = 4;
             this.lstbxRecentActivity.SelectedIndexChanged += new System.EventHandler(this.lstbxRecentActivity_SelectedIndexChanged);
             // 
             // dgvDeptHeadCount
             // 
             this.dgvDeptHeadCount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDeptHeadCount.Location = new System.Drawing.Point(20, 572);
             this.dgvDeptHeadCount.Name = "dgvDeptHeadCount";
-            this.dgvDeptHeadCount.Size = new System.Drawing.Size(1012, 249);
             this.dgvDeptHeadCount.TabIndex = 5;
             // 
             // lblOnLeaveToday
             // 
             this.lblOnLeaveToday.BackColor = System.Drawing.Color.LightSeaGreen;
             this.lblOnLeaveToday.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOnLeaveToday.Location = new System.Drawing.Point(272, 76);
             this.lblOnLeaveToday.Name = "lblOnLeaveToday";
-            this.lblOnLeaveToday.Size = new System.Drawing.Size(243, 50);
             this.lblOnLeaveToday.TabIndex = 1;
             this.lblOnLeaveToday.Text = "ON LEAVE TODAY";
             this.lblOnLeaveToday.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -404,9 +448,7 @@
             // 
             this.lblNumTE.AutoSize = true;
             this.lblNumTE.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumTE.Location = new System.Drawing.Point(84, 56);
             this.lblNumTE.Name = "lblNumTE";
-            this.lblNumTE.Size = new System.Drawing.Size(68, 40);
             this.lblNumTE.TabIndex = 1;
             this.lblNumTE.Text = "142";
             // 
@@ -414,9 +456,7 @@
             // 
             this.lblTotalEmployees.BackColor = System.Drawing.Color.LightSeaGreen;
             this.lblTotalEmployees.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalEmployees.Location = new System.Drawing.Point(1, 7);
             this.lblTotalEmployees.Name = "lblTotalEmployees";
-            this.lblTotalEmployees.Size = new System.Drawing.Size(249, 52);
             this.lblTotalEmployees.TabIndex = 0;
             this.lblTotalEmployees.Text = "TOTAL EMPLOYEES";
             this.lblTotalEmployees.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -424,12 +464,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblNumTE);
             this.panel1.Controls.Add(this.lblTotalEmployees);
-            this.panel1.Location = new System.Drawing.Point(12, 71);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 150);
             this.panel1.TabIndex = 6;
             // 
             // label1
@@ -476,9 +513,7 @@
             // 
             this.lblRecentActs.AutoSize = true;
             this.lblRecentActs.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecentActs.Location = new System.Drawing.Point(14, 251);
             this.lblRecentActs.Name = "lblRecentActs";
-            this.lblRecentActs.Size = new System.Drawing.Size(237, 32);
             this.lblRecentActs.TabIndex = 7;
             this.lblRecentActs.Text = "RECENT ACTIVITIES";
             // 
@@ -486,9 +521,7 @@
             // 
             this.lblDptHeadcount.AutoSize = true;
             this.lblDptHeadcount.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDptHeadcount.Location = new System.Drawing.Point(14, 530);
             this.lblDptHeadcount.Name = "lblDptHeadcount";
-            this.lblDptHeadcount.Size = new System.Drawing.Size(331, 32);
             this.lblDptHeadcount.TabIndex = 8;
             this.lblDptHeadcount.Text = "DEPARTMENT HEADCOUNT";
             // 
@@ -497,17 +530,13 @@
             this.lblFinanceDpt.AutoSize = true;
             this.lblFinanceDpt.BackColor = System.Drawing.Color.DarkGray;
             this.lblFinanceDpt.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFinanceDpt.Location = new System.Drawing.Point(24, 584);
             this.lblFinanceDpt.Name = "lblFinanceDpt";
-            this.lblFinanceDpt.Size = new System.Drawing.Size(188, 25);
             this.lblFinanceDpt.TabIndex = 9;
             this.lblFinanceDpt.Text = "Finance Department";
             // 
             // progressBarFinance
             // 
-            this.progressBarFinance.Location = new System.Drawing.Point(53, 617);
             this.progressBarFinance.Name = "progressBarFinance";
-            this.progressBarFinance.Size = new System.Drawing.Size(903, 13);
             this.progressBarFinance.TabIndex = 10;
             // 
             // lblMarketingSalesDpt
@@ -515,9 +544,7 @@
             this.lblMarketingSalesDpt.AutoSize = true;
             this.lblMarketingSalesDpt.BackColor = System.Drawing.Color.DarkGray;
             this.lblMarketingSalesDpt.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarketingSalesDpt.Location = new System.Drawing.Point(24, 639);
             this.lblMarketingSalesDpt.Name = "lblMarketingSalesDpt";
-            this.lblMarketingSalesDpt.Size = new System.Drawing.Size(262, 25);
             this.lblMarketingSalesDpt.TabIndex = 11;
             this.lblMarketingSalesDpt.Text = "Marketing/Sales Department";
             // 
@@ -526,9 +553,7 @@
             this.lblResearchDevDpt.AutoSize = true;
             this.lblResearchDevDpt.BackColor = System.Drawing.Color.DarkGray;
             this.lblResearchDevDpt.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResearchDevDpt.Location = new System.Drawing.Point(24, 697);
             this.lblResearchDevDpt.Name = "lblResearchDevDpt";
-            this.lblResearchDevDpt.Size = new System.Drawing.Size(322, 25);
             this.lblResearchDevDpt.TabIndex = 12;
             this.lblResearchDevDpt.Text = "Research/Development Department";
             // 
@@ -537,67 +562,51 @@
             this.lblOperationsDpt.AutoSize = true;
             this.lblOperationsDpt.BackColor = System.Drawing.Color.DarkGray;
             this.lblOperationsDpt.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOperationsDpt.Location = new System.Drawing.Point(24, 747);
             this.lblOperationsDpt.Name = "lblOperationsDpt";
-            this.lblOperationsDpt.Size = new System.Drawing.Size(216, 25);
             this.lblOperationsDpt.TabIndex = 13;
             this.lblOperationsDpt.Text = "Operations Department";
             // 
             // progressBarMarketingSales
             // 
-            this.progressBarMarketingSales.Location = new System.Drawing.Point(54, 676);
             this.progressBarMarketingSales.Name = "progressBarMarketingSales";
-            this.progressBarMarketingSales.Size = new System.Drawing.Size(902, 13);
             this.progressBarMarketingSales.TabIndex = 14;
             // 
             // progressBarResearchDev
             // 
-            this.progressBarResearchDev.Location = new System.Drawing.Point(55, 730);
             this.progressBarResearchDev.Name = "progressBarResearchDev";
-            this.progressBarResearchDev.Size = new System.Drawing.Size(901, 13);
             this.progressBarResearchDev.TabIndex = 15;
             // 
             // progressBarOperations
             // 
-            this.progressBarOperations.Location = new System.Drawing.Point(55, 782);
             this.progressBarOperations.Name = "progressBarOperations";
-            this.progressBarOperations.Size = new System.Drawing.Size(901, 13);
             this.progressBarOperations.TabIndex = 16;
             // 
             // lblFinanceCount
             // 
             this.lblFinanceCount.AutoSize = true;
             this.lblFinanceCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFinanceCount.Location = new System.Drawing.Point(972, 613);
             this.lblFinanceCount.Name = "lblFinanceCount";
-            this.lblFinanceCount.Size = new System.Drawing.Size(0, 17);
             this.lblFinanceCount.TabIndex = 17;
             // 
             // lblMarketingSalesCount
             // 
             this.lblMarketingSalesCount.AutoSize = true;
             this.lblMarketingSalesCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarketingSalesCount.Location = new System.Drawing.Point(972, 672);
             this.lblMarketingSalesCount.Name = "lblMarketingSalesCount";
-            this.lblMarketingSalesCount.Size = new System.Drawing.Size(0, 17);
             this.lblMarketingSalesCount.TabIndex = 18;
             // 
             // lblResearchDevCount
             // 
             this.lblResearchDevCount.AutoSize = true;
             this.lblResearchDevCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResearchDevCount.Location = new System.Drawing.Point(972, 726);
             this.lblResearchDevCount.Name = "lblResearchDevCount";
-            this.lblResearchDevCount.Size = new System.Drawing.Size(0, 17);
             this.lblResearchDevCount.TabIndex = 19;
             // 
             // lblOperationsCount
             // 
             this.lblOperationsCount.AutoSize = true;
             this.lblOperationsCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOperationsCount.Location = new System.Drawing.Point(972, 778);
             this.lblOperationsCount.Name = "lblOperationsCount";
-            this.lblOperationsCount.Size = new System.Drawing.Size(0, 17);
             this.lblOperationsCount.TabIndex = 20;
             // 
             this.dgvDeptHeadCount.Location = new System.Drawing.Point(427, 640);
@@ -607,7 +616,6 @@
             // 
             // MainDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblOperationsCount);
             this.Controls.Add(this.lblResearchDevCount);
@@ -630,9 +638,13 @@
             this.Controls.Add(this.pnlLate);
             this.Controls.Add(this.pnlReq);
             this.Controls.Add(this.pnlOnLeaveToday);
+            this.Controls.Add(this.pnltotalemployee);
+            this.Controls.Add(this.pnlSidebar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainDashboard";
-            this.Size = new System.Drawing.Size(1050, 864);
             this.Load += new System.EventHandler(this.MainDashboard_Load);
+            this.pnlSidebar.ResumeLayout(false);
+            this.pnlSidebar.PerformLayout();
             this.pnlOnLeaveToday.ResumeLayout(false);
             this.pnlOnLeaveToday.PerformLayout();
             this.pnlReq.ResumeLayout(false);
@@ -644,19 +656,10 @@
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.Controls.Add(this.pnltotalemployee);
-            this.Controls.Add(this.pnlSidebar);
-            this.Name = "MainDashboard";
-            this.Size = new System.Drawing.Size(1050, 864);
-            this.pnlSidebar.ResumeLayout(false);
-            this.pnlSidebar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDeptHeadCount)).EndInit();
-            this.ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Button btnAttendance;
         private System.Windows.Forms.Button btnDepartment;

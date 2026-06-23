@@ -57,7 +57,7 @@
             this.pnlSidebar.Controls.Add(this.btnLeaveRequests);
             this.pnlSidebar.Controls.Add(this.label5);
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(372, 878);
             this.pnlSidebar.TabIndex = 0;
@@ -72,7 +72,7 @@
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.Location = new System.Drawing.Point(-2, 793);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(372, 46);
             this.btnLogOut.TabIndex = 17;
@@ -102,7 +102,7 @@
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDashboard.Location = new System.Drawing.Point(-2, 120);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(376, 50);
             this.btnDashboard.TabIndex = 15;
@@ -120,7 +120,7 @@
             this.btnSetting.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetting.ForeColor = System.Drawing.Color.White;
             this.btnSetting.Location = new System.Drawing.Point(0, 558);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(2);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(372, 46);
             this.btnSetting.TabIndex = 14;
@@ -138,7 +138,7 @@
             this.btnAttendance.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAttendance.ForeColor = System.Drawing.Color.White;
             this.btnAttendance.Location = new System.Drawing.Point(-2, 507);
-            this.btnAttendance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAttendance.Margin = new System.Windows.Forms.Padding(2);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.Size = new System.Drawing.Size(374, 46);
             this.btnAttendance.TabIndex = 13;
@@ -155,7 +155,7 @@
             this.btnDepartment.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDepartment.ForeColor = System.Drawing.Color.White;
             this.btnDepartment.Location = new System.Drawing.Point(0, 457);
-            this.btnDepartment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDepartment.Margin = new System.Windows.Forms.Padding(2);
             this.btnDepartment.Name = "btnDepartment";
             this.btnDepartment.Size = new System.Drawing.Size(374, 46);
             this.btnDepartment.TabIndex = 12;
@@ -173,7 +173,7 @@
             this.btnEmployee.ForeColor = System.Drawing.Color.White;
             this.btnEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEmployee.Location = new System.Drawing.Point(-2, 176);
-            this.btnEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(376, 48);
             this.btnEmployee.TabIndex = 11;
@@ -191,7 +191,7 @@
             this.btnPayroll.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayroll.ForeColor = System.Drawing.Color.White;
             this.btnPayroll.Location = new System.Drawing.Point(0, 284);
-            this.btnPayroll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPayroll.Margin = new System.Windows.Forms.Padding(2);
             this.btnPayroll.Name = "btnPayroll";
             this.btnPayroll.Size = new System.Drawing.Size(374, 46);
             this.btnPayroll.TabIndex = 11;
@@ -209,7 +209,7 @@
             this.btnLeaveRequests.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeaveRequests.ForeColor = System.Drawing.Color.White;
             this.btnLeaveRequests.Location = new System.Drawing.Point(-2, 228);
-            this.btnLeaveRequests.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLeaveRequests.Margin = new System.Windows.Forms.Padding(2);
             this.btnLeaveRequests.Name = "btnLeaveRequests";
             this.btnLeaveRequests.Size = new System.Drawing.Size(374, 50);
             this.btnLeaveRequests.TabIndex = 10;
@@ -233,10 +233,10 @@
             // 
             // pnlMainContainer
             // 
-            this.pnlMainContainer.Location = new System.Drawing.Point(376, 0);
+            this.pnlMainContainer.Location = new System.Drawing.Point(374, 0);
             this.pnlMainContainer.Margin = new System.Windows.Forms.Padding(0);
             this.pnlMainContainer.Name = "pnlMainContainer";
-            this.pnlMainContainer.Size = new System.Drawing.Size(1050, 864);
+            this.pnlMainContainer.Size = new System.Drawing.Size(655, 864);
             this.pnlMainContainer.TabIndex = 0;
             this.pnlMainContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMainContainer_Paint);
             // 
@@ -247,7 +247,7 @@
             this.ClientSize = new System.Drawing.Size(1028, 609);
             this.Controls.Add(this.pnlMainContainer);
             this.Controls.Add(this.pnlSidebar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMainForm";
             this.Text = "HRMS";
             this.Load += new System.EventHandler(this.Form1_Load);

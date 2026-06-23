@@ -31,6 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlStudentDetails = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.dtpHD = new System.Windows.Forms.DateTimePicker();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,10 +62,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pnlStudentList = new System.Windows.Forms.Panel();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.dtpHD = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.employee_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.first_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -128,6 +128,49 @@
             this.pnlStudentDetails.Name = "pnlStudentDetails";
             this.pnlStudentDetails.Size = new System.Drawing.Size(1342, 314);
             this.pnlStudentDetails.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(549, 234);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "- Select Status-";
+            // 
+            // cmbStatus
+            // 
+            this.cmbStatus.ForeColor = System.Drawing.Color.DimGray;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
+            "Active",
+            "Leave",
+            "Inactive"});
+            this.cmbStatus.Location = new System.Drawing.Point(552, 264);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(513, 24);
+            this.cmbStatus.TabIndex = 26;
+            this.cmbStatus.Text = "- Select Status-";
+            // 
+            // dtpHD
+            // 
+            this.dtpHD.Location = new System.Drawing.Point(552, 190);
+            this.dtpHD.Name = "dtpHD";
+            this.dtpHD.Size = new System.Drawing.Size(513, 22);
+            this.dtpHD.TabIndex = 25;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLastName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtLastName.Location = new System.Drawing.Point(26, 120);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(480, 22);
+            this.txtLastName.TabIndex = 24;
+            this.txtLastName.Text = " Surname";
             // 
             // label14
             // 
@@ -365,6 +408,7 @@
             this.label3.Size = new System.Drawing.Size(138, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "| Employee Details";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // cmbFilterCourse
             // 
@@ -474,49 +518,6 @@
             this.dgvEmployee.Size = new System.Drawing.Size(1341, 358);
             this.dgvEmployee.TabIndex = 7;
             this.dgvEmployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudents_CellContentClick);
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLastName.ForeColor = System.Drawing.Color.DimGray;
-            this.txtLastName.Location = new System.Drawing.Point(26, 120);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(480, 22);
-            this.txtLastName.TabIndex = 24;
-            this.txtLastName.Text = " Surname";
-            // 
-            // dtpHD
-            // 
-            this.dtpHD.Location = new System.Drawing.Point(552, 190);
-            this.dtpHD.Name = "dtpHD";
-            this.dtpHD.Size = new System.Drawing.Size(513, 22);
-            this.dtpHD.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(549, 234);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "- Select Status-";
-            // 
-            // cmbStatus
-            // 
-            this.cmbStatus.ForeColor = System.Drawing.Color.DimGray;
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Items.AddRange(new object[] {
-            "Active",
-            "Leave",
-            "Inactive"});
-            this.cmbStatus.Location = new System.Drawing.Point(552, 264);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(513, 24);
-            this.cmbStatus.TabIndex = 26;
-            this.cmbStatus.Text = "- Select Status-";
             // 
             // employee_id
             // 

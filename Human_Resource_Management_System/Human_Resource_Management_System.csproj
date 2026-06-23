@@ -192,25 +192,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\40c72b5a8f476a60135d71e450f56a77.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\istockphoto-677653224-612x612.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download %2818%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download %2818%291.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\54dcd5e1c47654430ca6a7880f9d41bc.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1270c9654e2631167a84507d43115565.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -123,7 +123,7 @@
             this.gbAdd.Controls.Add(this.label3);
             this.gbAdd.Location = new System.Drawing.Point(49, 118);
             this.gbAdd.Name = "gbAdd";
-            this.gbAdd.Size = new System.Drawing.Size(473, 324);
+            this.gbAdd.Size = new System.Drawing.Size(362, 324);
             this.gbAdd.TabIndex = 2;
             this.gbAdd.TabStop = false;
             this.gbAdd.Text = "Add New Department";
@@ -133,21 +133,21 @@
             this.cmbLocation.FormattingEnabled = true;
             this.cmbLocation.Location = new System.Drawing.Point(10, 231);
             this.cmbLocation.Name = "cmbLocation";
-            this.cmbLocation.Size = new System.Drawing.Size(444, 28);
+            this.cmbLocation.Size = new System.Drawing.Size(320, 28);
             this.cmbLocation.TabIndex = 6;
             // 
             // txtboxName
             // 
             this.txtboxName.Location = new System.Drawing.Point(10, 155);
             this.txtboxName.Name = "txtboxName";
-            this.txtboxName.Size = new System.Drawing.Size(444, 27);
+            this.txtboxName.Size = new System.Drawing.Size(320, 27);
             this.txtboxName.TabIndex = 4;
             // 
             // txtboxID
             // 
             this.txtboxID.Location = new System.Drawing.Point(10, 73);
             this.txtboxID.Name = "txtboxID";
-            this.txtboxID.Size = new System.Drawing.Size(444, 27);
+            this.txtboxID.Size = new System.Drawing.Size(320, 27);
             this.txtboxID.TabIndex = 3;
             // 
             // label5
@@ -184,7 +184,7 @@
             this.gbAction.Controls.Add(this.btnDelete);
             this.gbAction.Controls.Add(this.btnUpdate);
             this.gbAction.Controls.Add(this.btnAdd);
-            this.gbAction.Location = new System.Drawing.Point(1069, 139);
+            this.gbAction.Location = new System.Drawing.Point(851, 138);
             this.gbAction.Name = "gbAction";
             this.gbAction.Size = new System.Drawing.Size(261, 282);
             this.gbAction.TabIndex = 8;
@@ -243,9 +243,9 @@
             this.gbUpdate.Controls.Add(this.label6);
             this.gbUpdate.Controls.Add(this.label7);
             this.gbUpdate.Controls.Add(this.label8);
-            this.gbUpdate.Location = new System.Drawing.Point(547, 118);
+            this.gbUpdate.Location = new System.Drawing.Point(437, 118);
             this.gbUpdate.Name = "gbUpdate";
-            this.gbUpdate.Size = new System.Drawing.Size(473, 324);
+            this.gbUpdate.Size = new System.Drawing.Size(362, 324);
             this.gbUpdate.TabIndex = 7;
             this.gbUpdate.TabStop = false;
             this.gbUpdate.Text = "Update Department";
@@ -255,21 +255,21 @@
             this.cmbLocationupdate.FormattingEnabled = true;
             this.cmbLocationupdate.Location = new System.Drawing.Point(10, 231);
             this.cmbLocationupdate.Name = "cmbLocationupdate";
-            this.cmbLocationupdate.Size = new System.Drawing.Size(444, 28);
+            this.cmbLocationupdate.Size = new System.Drawing.Size(325, 28);
             this.cmbLocationupdate.TabIndex = 6;
             // 
             // txtboxNameupdate
             // 
             this.txtboxNameupdate.Location = new System.Drawing.Point(10, 155);
             this.txtboxNameupdate.Name = "txtboxNameupdate";
-            this.txtboxNameupdate.Size = new System.Drawing.Size(444, 27);
+            this.txtboxNameupdate.Size = new System.Drawing.Size(325, 27);
             this.txtboxNameupdate.TabIndex = 4;
             // 
             // txtboxIDupdate
             // 
             this.txtboxIDupdate.Location = new System.Drawing.Point(10, 73);
             this.txtboxIDupdate.Name = "txtboxIDupdate";
-            this.txtboxIDupdate.Size = new System.Drawing.Size(444, 27);
+            this.txtboxIDupdate.Size = new System.Drawing.Size(325, 27);
             this.txtboxIDupdate.TabIndex = 3;
             // 
             // label6
@@ -310,11 +310,11 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgwDepartmentlist.Location = new System.Drawing.Point(4, 516);
+            this.dgwDepartmentlist.Location = new System.Drawing.Point(4, 526);
             this.dgwDepartmentlist.Name = "dgwDepartmentlist";
             this.dgwDepartmentlist.RowHeadersWidth = 51;
             this.dgwDepartmentlist.RowTemplate.Height = 24;
-            this.dgwDepartmentlist.Size = new System.Drawing.Size(1296, 46);
+            this.dgwDepartmentlist.Size = new System.Drawing.Size(1130, 46);
             this.dgwDepartmentlist.TabIndex = 10;
             // 
             // Column1
@@ -382,7 +382,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucDepartment";
-            this.Size = new System.Drawing.Size(1309, 1021);
+            this.Size = new System.Drawing.Size(1502, 848);
             this.Load += new System.EventHandler(this.ucDepartment_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

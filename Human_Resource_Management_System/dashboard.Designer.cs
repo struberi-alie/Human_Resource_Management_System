@@ -70,8 +70,6 @@
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reg_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.monthly_salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlStudentDetails.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -79,7 +77,6 @@
             this.panel3.SuspendLayout();
             this.pnlStudentList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -587,32 +584,9 @@
             this.monthly_salary.Name = "monthly_salary";
             this.monthly_salary.Width = 158;
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.Teal;
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(17, 511);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1444, 41);
-            this.panel4.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "| Employees";
-            // 
             // dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlStudentDetails);
             this.Controls.Add(this.pnlLabel1);
@@ -636,8 +610,6 @@
             this.pnlStudentList.ResumeLayout(false);
             this.pnlStudentList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -685,7 +657,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewTextBoxColumn reg_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn monthly_salary;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label2;
     }
 }

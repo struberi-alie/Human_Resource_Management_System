@@ -190,5 +190,10 @@ namespace Human_Resource_Management_System
                 dgvEmployee.DataSource = dt;
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

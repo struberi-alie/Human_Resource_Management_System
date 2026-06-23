@@ -47,6 +47,9 @@ namespace Human_Resource_Management_System
 
         private void frmMainForm_Load(object sender, EventArgs e)
         {
+            MainDashboard dashboard = new MainDashboard();
+            LoadUserControl(dashboard);
+            this.HighlightButton(buttonDashboard);
         }
 
         //employee button

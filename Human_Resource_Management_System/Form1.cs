@@ -61,6 +61,7 @@ namespace Human_Resource_Management_System
 
         private void btnLeaveRequests_Click(object sender, EventArgs e)
         {
+            HighlightButton(btnLeaveRequests);
             // Create an instance of your UserControl
             ucLeaveRequestUD leavePage = new ucLeaveRequestUD();
 
@@ -70,7 +71,10 @@ namespace Human_Resource_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            HighlightButton(btnPayroll);
+            ucPayroll payrollPage = new ucPayroll();
 
+            LoadUserControl(payrollPage);
         }
 
         private void button2_Click(object sender, EventArgs e)

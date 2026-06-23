@@ -175,8 +175,8 @@
     <EmbeddedResource Include="ucLeaveRequest.resx">
       <DependentUpon>ucLeaveRequest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucLeaveRequestUD.resx">
-      <DependentUpon>ucLeaveRequestUD.cs</DependentUpon>
+    <EmbeddedResource Include="ucPayroll.resx">
+      <DependentUpon>ucPayroll.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -110,7 +110,7 @@
             // 
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(27, 160);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(399, 29);
             this.txtSearch.TabIndex = 3;
@@ -122,7 +122,7 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Location = new System.Drawing.Point(452, 154);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(133, 43);
             this.btnSearch.TabIndex = 4;
@@ -134,7 +134,7 @@
             this.pnlPayrollHeader.BackColor = System.Drawing.Color.Teal;
             this.pnlPayrollHeader.Controls.Add(this.label4);
             this.pnlPayrollHeader.Location = new System.Drawing.Point(27, 234);
-            this.pnlPayrollHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPayrollHeader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPayrollHeader.Name = "pnlPayrollHeader";
             this.pnlPayrollHeader.Size = new System.Drawing.Size(867, 55);
             this.pnlPayrollHeader.TabIndex = 5;
@@ -169,7 +169,7 @@
             this.NetPay,
             this.PaymentDate});
             this.dvgPayroll.Location = new System.Drawing.Point(27, 309);
-            this.dvgPayroll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dvgPayroll.Margin = new System.Windows.Forms.Padding(4);
             this.dvgPayroll.Name = "dvgPayroll";
             this.dvgPayroll.ReadOnly = true;
             this.dvgPayroll.RowHeadersVisible = false;
@@ -261,8 +261,8 @@
             this.pnlPayrollDetails.Controls.Add(this.txtPayrollID);
             this.pnlPayrollDetails.Controls.Add(this.label6);
             this.pnlPayrollDetails.Controls.Add(this.label5);
-            this.pnlPayrollDetails.Location = new System.Drawing.Point(933, 234);
-            this.pnlPayrollDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPayrollDetails.Location = new System.Drawing.Point(468, 154);
+            this.pnlPayrollDetails.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPayrollDetails.Name = "pnlPayrollDetails";
             this.pnlPayrollDetails.Size = new System.Drawing.Size(426, 675);
             this.pnlPayrollDetails.TabIndex = 7;
@@ -270,7 +270,7 @@
             // dtpPaymentDate
             // 
             this.dtpPaymentDate.Location = new System.Drawing.Point(20, 615);
-            this.dtpPaymentDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpPaymentDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpPaymentDate.Name = "dtpPaymentDate";
             this.dtpPaymentDate.Size = new System.Drawing.Size(372, 22);
             this.dtpPaymentDate.TabIndex = 15;
@@ -289,7 +289,7 @@
             // txtNetPay
             // 
             this.txtNetPay.Location = new System.Drawing.Point(20, 542);
-            this.txtNetPay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNetPay.Margin = new System.Windows.Forms.Padding(4);
             this.txtNetPay.Name = "txtNetPay";
             this.txtNetPay.ReadOnly = true;
             this.txtNetPay.Size = new System.Drawing.Size(372, 22);
@@ -309,7 +309,7 @@
             // txtDeductions
             // 
             this.txtDeductions.Location = new System.Drawing.Point(20, 468);
-            this.txtDeductions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDeductions.Margin = new System.Windows.Forms.Padding(4);
             this.txtDeductions.Name = "txtDeductions";
             this.txtDeductions.Size = new System.Drawing.Size(372, 22);
             this.txtDeductions.TabIndex = 12;
@@ -329,7 +329,7 @@
             // txtGrossPay
             // 
             this.txtGrossPay.Location = new System.Drawing.Point(20, 394);
-            this.txtGrossPay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGrossPay.Margin = new System.Windows.Forms.Padding(4);
             this.txtGrossPay.Name = "txtGrossPay";
             this.txtGrossPay.Size = new System.Drawing.Size(372, 22);
             this.txtGrossPay.TabIndex = 10;
@@ -349,7 +349,7 @@
             // dtpEnd
             // 
             this.dtpEnd.Location = new System.Drawing.Point(20, 320);
-            this.dtpEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpEnd.Margin = new System.Windows.Forms.Padding(4);
             this.dtpEnd.Name = "dtpEnd";
             this.dtpEnd.Size = new System.Drawing.Size(372, 22);
             this.dtpEnd.TabIndex = 8;
@@ -368,7 +368,7 @@
             // dtpStart
             // 
             this.dtpStart.Location = new System.Drawing.Point(20, 246);
-            this.dtpStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpStart.Margin = new System.Windows.Forms.Padding(4);
             this.dtpStart.Name = "dtpStart";
             this.dtpStart.Size = new System.Drawing.Size(372, 22);
             this.dtpStart.TabIndex = 6;
@@ -388,7 +388,7 @@
             // 
             this.cboEmployee.FormattingEnabled = true;
             this.cboEmployee.Location = new System.Drawing.Point(20, 172);
-            this.cboEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.cboEmployee.Name = "cboEmployee";
             this.cboEmployee.Size = new System.Drawing.Size(372, 24);
             this.cboEmployee.TabIndex = 4;
@@ -408,7 +408,7 @@
             // txtPayrollID
             // 
             this.txtPayrollID.Location = new System.Drawing.Point(20, 98);
-            this.txtPayrollID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPayrollID.Margin = new System.Windows.Forms.Padding(4);
             this.txtPayrollID.Name = "txtPayrollID";
             this.txtPayrollID.ReadOnly = true;
             this.txtPayrollID.Size = new System.Drawing.Size(372, 22);
@@ -443,7 +443,7 @@
             this.btnGenerate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerate.ForeColor = System.Drawing.Color.White;
             this.btnGenerate.Location = new System.Drawing.Point(27, 786);
-            this.btnGenerate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGenerate.Margin = new System.Windows.Forms.Padding(4);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(240, 55);
             this.btnGenerate.TabIndex = 8;
@@ -457,7 +457,7 @@
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.Location = new System.Drawing.Point(292, 786);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(240, 55);
             this.btnUpdate.TabIndex = 9;
@@ -471,7 +471,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(560, 786);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(240, 55);
             this.btnDelete.TabIndex = 10;
@@ -494,9 +494,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucPayroll";
-            this.Size = new System.Drawing.Size(1400, 1063);
+            this.Size = new System.Drawing.Size(1502, 848);
             this.pnlPayrollHeader.ResumeLayout(false);
             this.pnlPayrollHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgPayroll)).EndInit();

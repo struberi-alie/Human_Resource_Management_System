@@ -19,17 +19,10 @@ namespace Human_Resource_Management_System
 
         public void LoadUserControl(UserControl uc)
         {
-            // 1. Clear any current content
             panelMainContainer.Controls.Clear();
-
-            // 2. Setup the new control
             uc.Dock = DockStyle.Fill;
             uc.AutoSize = false;    
-
-            // 3. Add to the panel
             panelMainContainer.Controls.Add(uc);
-
-            // 4. Ensure it sits on top
             uc.BringToFront();
         }
 
@@ -45,6 +38,7 @@ namespace Human_Resource_Management_System
         }
 
 
+        //Main Form Load
         private void frmMainForm_Load(object sender, EventArgs e)
         {
             MainDashboard dashboard = new MainDashboard();
@@ -59,41 +53,48 @@ namespace Human_Resource_Management_System
             this.HighlightButton(buttonEmployee);
         }
 
+        //Dashboard button
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             LoadUserControl(new MainDashboard());
             this.HighlightButton(buttonDashboard);
         }
 
+        //Attendance button
         private void buttonAttendance_Click(object sender, EventArgs e)
         {
             LoadUserControl(new Ash());
             this.HighlightButton(buttonAttendance);
         }
 
+        //Leave Request button
         private void buttonLRequest_Click(object sender, EventArgs e)
         {
             LoadUserControl(new ucLeaveRequestUD());
             this.HighlightButton(buttonLRequest);
         }
 
+        //Payroll button
         private void buttonPayroll_Click(object sender, EventArgs e)
         {
             LoadUserControl(new ucPayroll());
             this.HighlightButton(buttonPayroll);
         }
 
+        //Department button
         private void buttonDepartment_Click(object sender, EventArgs e)
         {
             LoadUserControl(new ucDepartment());
             this.HighlightButton(buttonDepartment);
         }
 
+        //side bar panel paint event
         private void panelSideBar_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
 
+        //main container panel paint event
         private void panelMainContainer_Paint_1(object sender, PaintEventArgs e)
         {
 

@@ -179,17 +179,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlSidebar;
-        private System.Windows.Forms.Panel pnlMainContainer;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnLeaveRequests;
-        private System.Windows.Forms.Button btnPayroll;
-        private System.Windows.Forms.Button btnEmployee;
-        private System.Windows.Forms.Button btnAttendance;
-        private System.Windows.Forms.Button btnDepartment;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelSideBar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelMainContainer;

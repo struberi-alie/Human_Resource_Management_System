@@ -52,7 +52,7 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.cmbDepartment = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtStudentID = new System.Windows.Forms.TextBox();
+            this.txtEmployeeId = new System.Windows.Forms.TextBox();
             this.pnlLabel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbFilterCourse = new System.Windows.Forms.ComboBox();
@@ -123,7 +123,7 @@
             this.pnlStudentDetails.Controls.Add(this.txtFirstName);
             this.pnlStudentDetails.Controls.Add(this.cmbDepartment);
             this.pnlStudentDetails.Controls.Add(this.txtEmail);
-            this.pnlStudentDetails.Controls.Add(this.txtStudentID);
+            this.pnlStudentDetails.Controls.Add(this.txtEmployeeId);
             this.pnlStudentDetails.Location = new System.Drawing.Point(17, 50);
             this.pnlStudentDetails.Name = "pnlStudentDetails";
             this.pnlStudentDetails.Size = new System.Drawing.Size(1444, 314);
@@ -378,14 +378,14 @@
             this.txtEmail.TabIndex = 1;
             this.txtEmail.Text = "ex. juandelacruz@email.com";
             // 
-            // txtStudentID
+            // txtEmployeeId
             // 
-            this.txtStudentID.ForeColor = System.Drawing.Color.DimGray;
-            this.txtStudentID.Location = new System.Drawing.Point(38, 50);
-            this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(281, 22);
-            this.txtStudentID.TabIndex = 0;
-            this.txtStudentID.Text = "ex. XXXXX";
+            this.txtEmployeeId.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEmployeeId.Location = new System.Drawing.Point(38, 50);
+            this.txtEmployeeId.Name = "txtEmployeeId";
+            this.txtEmployeeId.Size = new System.Drawing.Size(281, 22);
+            this.txtEmployeeId.TabIndex = 0;
+            this.txtEmployeeId.Text = "ex. XXXXX";
             // 
             // pnlLabel1
             // 
@@ -635,7 +635,7 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.ComboBox cmbDepartment;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtStudentID;
+        private System.Windows.Forms.TextBox txtEmployeeId;
         private System.Windows.Forms.Panel pnlLabel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbFilterCourse;

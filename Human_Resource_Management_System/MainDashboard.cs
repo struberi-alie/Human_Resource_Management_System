@@ -65,15 +65,87 @@ namespace Human_Resource_Management_System
             lblOperationsCount.Text = $"50 / {totalEmployees}";
         }
 
-        // Mga Event Handlers (Dito nakalagay sa loob ng class)
+        private bool IsDashboardDataValid()
+        {
+            // 1. Chinecheck kung ang kabuuang bilang ng empleyado ay hindi negative or zero
+            int totalEmployees = 142;
+            if (totalEmployees <= 0)
+            {
+                MessageBox.Show("Total Employees cannot be zero or negative.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // 2. Chinecheck kung ang bilang ng empleyadong naka-leave ay korique
+            int onLeaveToday = 8;
+            if (onLeaveToday < 0 || onLeaveToday > totalEmployees)
+            {
+                MessageBox.Show("Number of employees on leave is invalid. It cannot be negative or more than total employees.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // 3. Chinecheck kung ang bilang ng late employees ay tama
+            int lateToday = 4;
+            if (lateToday < 0 || lateToday > totalEmployees)
+            {
+                MessageBox.Show("Number of late employees is invalid. It cannot be negative or more than total employees.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // 4. Chinecheck kung ang bilang ng mga pending leave request ay korique
+            int pendingLeave = 12;
+            if (pendingLeave < 0)
+            {
+                MessageBox.Show("Pending leave requests cannot be negative.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // 5. Chinecheck kung ang bilang sa mga departments ay korique
+            int financeCount = 38;
+            int marketingCount = 29;
+            int rndCount = 25;
+            int operationsCount = 50;
+
+            if (financeCount < 0 || marketingCount < 0 || rndCount < 0 || operationsCount < 0)
+            {
+                MessageBox.Show("Department headcount cannot be negative.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // 6. Chinecheck kung ang kabuuang bilang ng bawat departments ay hindi lumampas sa total number of employees
+            int sumOfDepartments = financeCount + marketingCount + rndCount + operationsCount;
+            if (sumOfDepartments > totalEmployees)
+            {
+                MessageBox.Show("Total employees across departments cannot be more than overall total employees.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // 7. Chineheck kung may laman ang mga recent activities na ilalagay sa listahan
+            string sampleActivity = $"{DateTime.Now:yyyy-MM-dd} 08:05 | New employee record created";
+            if (string.IsNullOrWhiteSpace(sampleActivity))
+            {
+                MessageBox.Show("Activity records cannot be empty.",
+                    "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+
+
         private void lstbxRecentActivity_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Ilagay ang logic mo rito kung meron
+            
         }
 
         private void pnltotalemployee_Paint(object sender, PaintEventArgs e)
         {
-            // Ilagay ang logic mo rito kung meron
+            
         }
 
         private void label4_Click(object sender, EventArgs e)

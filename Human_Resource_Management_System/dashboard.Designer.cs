@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.pnlStudentDetails = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEmployeeId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbShift = new System.Windows.Forms.ComboBox();
             this.dtpRegDate = new System.Windows.Forms.DateTimePicker();
@@ -67,8 +69,6 @@
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hiredate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.regdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtEmployeeId = new System.Windows.Forms.TextBox();
             this.pnlStudentDetails.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlLabel1.SuspendLayout();
@@ -107,6 +107,28 @@
             this.pnlStudentDetails.Size = new System.Drawing.Size(1444, 414);
             this.pnlStudentDetails.TabIndex = 9;
             this.pnlStudentDetails.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlStudentDetails_Paint);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Gray;
+            this.label5.Location = new System.Drawing.Point(37, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(90, 13);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "EMPLOYEE ID";
+            // 
+            // txtEmployeeId
+            // 
+            this.txtEmployeeId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmployeeId.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEmployeeId.Location = new System.Drawing.Point(43, 49);
+            this.txtEmployeeId.Name = "txtEmployeeId";
+            this.txtEmployeeId.Size = new System.Drawing.Size(286, 22);
+            this.txtEmployeeId.TabIndex = 32;
+            this.txtEmployeeId.Text = "XXXXX";
             // 
             // label4
             // 
@@ -171,7 +193,8 @@
             this.cmbStatus.FormattingEnabled = true;
             this.cmbStatus.Items.AddRange(new object[] {
             "Active",
-            "Leave",
+            "Late",
+            "On Leave",
             "Inactive"});
             this.cmbStatus.Location = new System.Drawing.Point(363, 266);
             this.cmbStatus.Name = "cmbStatus";
@@ -528,28 +551,6 @@
             this.regdate.MinimumWidth = 6;
             this.regdate.Name = "regdate";
             this.regdate.Width = 193;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(37, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 13);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "EMPLOYEE ID";
-            // 
-            // txtEmployeeId
-            // 
-            this.txtEmployeeId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmployeeId.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEmployeeId.Location = new System.Drawing.Point(43, 49);
-            this.txtEmployeeId.Name = "txtEmployeeId";
-            this.txtEmployeeId.Size = new System.Drawing.Size(286, 22);
-            this.txtEmployeeId.TabIndex = 32;
-            this.txtEmployeeId.Text = "XXXXX";
             // 
             // dashboard
             // 

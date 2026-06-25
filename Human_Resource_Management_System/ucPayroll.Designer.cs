@@ -261,7 +261,7 @@
             this.pnlPayrollDetails.Controls.Add(this.txtPayrollID);
             this.pnlPayrollDetails.Controls.Add(this.label6);
             this.pnlPayrollDetails.Controls.Add(this.label5);
-            this.pnlPayrollDetails.Location = new System.Drawing.Point(468, 154);
+            this.pnlPayrollDetails.Location = new System.Drawing.Point(926, 135);
             this.pnlPayrollDetails.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPayrollDetails.Name = "pnlPayrollDetails";
             this.pnlPayrollDetails.Size = new System.Drawing.Size(426, 675);

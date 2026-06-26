@@ -45,6 +45,8 @@ namespace Human_Resource_Management_System
             // 4. Ensure it sits on top
             uc.BringToFront();
         }
+
+        //HIGHLIGHTING THE BUTTONS
         private void HighlightButton(Button clickedButton)
         {
             // Reset all buttons to default color
@@ -55,24 +57,28 @@ namespace Human_Resource_Management_System
             clickedButton.BackColor = Color.FromArgb(0, 122, 204);
         }
 
-        private void ucLeaveRequest_Load(object sender, EventArgs e)
-        {
-        }
 
+        //FOR LEAVE REQUEST
         private void btnLeaveRequests_Click(object sender, EventArgs e)
         {
+            HighlightButton(btnLeaveRequests);
             // Create an instance of your UserControl
-            ucLeaveRequest leavePage = new ucLeaveRequest();
-
-            // Load it into the container
+            ucLeaveRequestUD leavePage = new ucLeaveRequestUD();
             LoadUserControl(leavePage);
         }
 
+
+        //FOR PAYROLL
         private void button1_Click(object sender, EventArgs e)
         {
+            HighlightButton(btnPayroll);
+            ucPayroll payrollPage = new ucPayroll();
 
+            LoadUserControl(payrollPage);
         }
 
+
+        //FOR EMPLOYEES
         private void button2_Click(object sender, EventArgs e)
         {
             // Create an instance of your UserControl
@@ -82,11 +88,9 @@ namespace Human_Resource_Management_System
             LoadUserControl(dashb);
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
 
-        }
 
+        //FOR ATTENDANCE
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -101,6 +105,15 @@ namespace Human_Resource_Management_System
                 // Load it into the container
                 LoadUserControl(MainDashboard);
             }
+        }
+
+        private void frmMainForm_Load(object sender, EventArgs e)
+        {
+            LoadUserControl(null);
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
         }
     }
 }

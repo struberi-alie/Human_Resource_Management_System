@@ -166,6 +166,9 @@
     <EmbeddedResource Include="ucDepartment.resx">
       <DependentUpon>ucDepartment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucLeaveRequestUD.resx">
+      <DependentUpon>ucLeaveRequestUD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucPayroll.resx">
       <DependentUpon>ucPayroll.cs</DependentUpon>
     </EmbeddedResource>

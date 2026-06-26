@@ -1,37 +1,39 @@
-﻿using System;
-using System.Configuration;
-using System.Data;
-using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+﻿
 
-namespace Human_Resource_Management_System 
+using System;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Windows.Forms;
+
+namespace infomanagement
 {
-    public class DatabaseConnection 
+
+    public static class DatabaseConnection
     {
+
+        //change the password to the password  set in the connection
+        private static readonly string connectionString = "server=mysql-pupacadportal-pupacadportal.h.aivencloud.com;port=15204;database=infomanagement;uid=avnadmin;password=\"YOUR_PASSWORD_HERE\"";
+
+
         public static MySqlConnection GetConnection()
         {
-            string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "db_secret.txt");
+            return new MySqlConnection(connectionString);
+        }
 
-            if (!System.IO.File.Exists(path))
+        public static bool TestConnection()
+        {
+            using (MySqlConnection conn = GetConnection())
             {
-                throw new Exception("Error: Hindi mahanap ang file sa: " + path);
-            }
-
-            try
-            {
-                string pass = System.IO.File.ReadAllText(path).Trim();
-                string host = "mysql-3579a049-marielligot859-19a6.l.aivencloud.com";
-                string port = "23850";
-                string db = "defaultdb";
-                string user = "avnadmin";
-
-                string connString = $"Server={host};Port={port};Database={db};Uid={user};Pwd={pass};SslMode=Required;";
-
-                return new MySqlConnection(connString);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Connection failed: " + ex.Message);
+                try
+                {
+                    conn.Open();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Database Connection Failed:\n" + ex.Message, "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
         }
     }

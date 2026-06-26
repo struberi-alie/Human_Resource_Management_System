@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using infomanagement;
+
 
 namespace Human_Resource_Management_System
 {

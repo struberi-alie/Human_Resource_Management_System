@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using infomanagement;
 
 namespace Human_Resource_Management_System
 {

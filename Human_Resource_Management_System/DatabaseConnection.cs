@@ -1,41 +1,37 @@
 ﻿using System;
+using System.Configuration;
 using System.Data;
-using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
-namespace infomanagement
+namespace Human_Resource_Management_System 
 {
-    public static class DatabaseConnection
+    public class DatabaseConnection 
     {
-        
-        private static readonly string server = "localhost";
-        private static readonly string database = "infomanagement";
-        private static readonly string uid = "root";       
-        private static readonly string password = "stormxoreo@0924";      
-
-        
-        private static readonly string connectionString = $"server={server};database={database};uid={uid};password={password};Convert Zero Datetime=True;";
-
-       
         public static MySqlConnection GetConnection()
         {
-            return new MySqlConnection(connectionString);
-        }
+            string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "db_secret.txt");
 
-        public static bool TestConnection()
-        {
-            using (MySqlConnection conn = GetConnection())
+            if (!System.IO.File.Exists(path))
             {
-                try
-                {
-                    conn.Open();
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Database Connection Failed:\n" + ex.Message, "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false;
-                }
+                throw new Exception("Error: Hindi mahanap ang file sa: " + path);
+            }
+
+            try
+            {
+                string pass = System.IO.File.ReadAllText(path).Trim();
+                string host = "mysql-3579a049-marielligot859-19a6.l.aivencloud.com";
+                string port = "23850";
+                string db = "defaultdb";
+                string user = "avnadmin";
+
+                string connString = $"Server={host};Port={port};Database={db};Uid={user};Pwd={pass};SslMode=Required;";
+
+                return new MySqlConnection(connString);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Connection failed: " + ex.Message);
             }
         }
     }

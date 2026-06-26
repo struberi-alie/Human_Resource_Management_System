@@ -40,9 +40,7 @@
             this.btnLeaveRequests = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pnlMainContainer = new System.Windows.Forms.Panel();
-            this.ucDepartment1 = new Human_Resource_Management_System.ucDepartment();
             this.pnlSidebar.SuspendLayout();
-            this.pnlMainContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSidebar
@@ -233,7 +231,6 @@
             // 
             // pnlMainContainer
             // 
-            this.pnlMainContainer.Controls.Add(this.ucDepartment1);
             this.pnlMainContainer.Location = new System.Drawing.Point(501, 0);
             this.pnlMainContainer.Margin = new System.Windows.Forms.Padding(0);
             this.pnlMainContainer.Name = "pnlMainContainer";
@@ -241,20 +238,11 @@
             this.pnlMainContainer.TabIndex = 0;
             this.pnlMainContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMainContainer_Paint);
             // 
-            // ucDepartment1
-            // 
-            this.ucDepartment1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucDepartment1.Location = new System.Drawing.Point(0, 0);
-            this.ucDepartment1.Margin = new System.Windows.Forms.Padding(4);
-            this.ucDepartment1.Name = "ucDepartment1";
-            this.ucDepartment1.Size = new System.Drawing.Size(1630, 1610);
-            this.ucDepartment1.TabIndex = 0;
-            // 
             // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1888, 750);
+            this.ClientSize = new System.Drawing.Size(1406, 750);
             this.Controls.Add(this.pnlMainContainer);
             this.Controls.Add(this.pnlSidebar);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -263,7 +251,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlSidebar.ResumeLayout(false);
             this.pnlSidebar.PerformLayout();
-            this.pnlMainContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -282,7 +269,6 @@
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Label label1;
-        private ucDepartment ucDepartment1;
     }
 }
 

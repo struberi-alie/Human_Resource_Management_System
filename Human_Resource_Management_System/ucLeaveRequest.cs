@@ -1,4 +1,4 @@
-﻿using infomanagement;
+﻿using Human_Resource_Management_System;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;

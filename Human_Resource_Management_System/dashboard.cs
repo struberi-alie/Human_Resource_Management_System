@@ -1,4 +1,4 @@
-﻿using infomanagement;
+﻿using Human_Resource_Management_System;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -146,11 +146,11 @@ namespace Human_Resource_Management_System
             }
         }
 
-        private void LoadDepartments()
+        private void Loaddepartment()
         {
             // Optimized query if you have a separate Departments table
             string query = @"SELECT e.* FROM Employees e 
-                 JOIN Departments d ON e.departmentId = d.departmentId 
+                 JOIN department d ON e.departmentId = d.departmentId 
                  WHERE d.deptName = @dept"; using (MySqlConnection conn = DatabaseConnection.GetConnection())
             {
                 MySqlCommand cmd = new MySqlCommand(query, conn);

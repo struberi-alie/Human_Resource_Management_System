@@ -1,4 +1,5 @@
-﻿using infomanagement;
+﻿using Human_Resource_Management_System;
+using infomanagement;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.Cmp;
 using System;
@@ -389,6 +390,11 @@ namespace Human_Resource_Management_System
                     }
                 }
             }
+        }
+
+        private void dgvEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

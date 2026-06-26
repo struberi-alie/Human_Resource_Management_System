@@ -41,7 +41,16 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLeaveRequests = new System.Windows.Forms.DataGridView();
+            this.colRequestID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmployee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLeaveType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colApprovedBy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlDetails = new System.Windows.Forms.Panel();
+            this.txtReason = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.cboApprovedBy = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
@@ -55,15 +64,9 @@
             this.cboEmployee = new System.Windows.Forms.ComboBox();
             this.lblEmployee = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtReason = new System.Windows.Forms.TextBox();
-            this.colApprovedBy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLeaveType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEmployee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRequestID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAddRequest = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLeaveRequests)).BeginInit();
             this.pnlDetails.SuspendLayout();
@@ -94,7 +97,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(600, 20);
+            this.label3.Location = new System.Drawing.Point(813, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 13);
             this.label3.TabIndex = 2;
@@ -104,11 +107,13 @@
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSearch.Location = new System.Drawing.Point(600, 45);
+            this.txtSearch.Location = new System.Drawing.Point(813, 45);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(220, 20);
             this.txtSearch.TabIndex = 3;
             this.txtSearch.Text = "Enter employee name or ID...";
+            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
+            this.txtSearch.Leave += new System.EventHandler(this.txtSearch_Leave);
             // 
             // btnSearch
             // 
@@ -116,12 +121,13 @@
             this.btnSearch.BackColor = System.Drawing.Color.Teal;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(830, 45);
+            this.btnSearch.Location = new System.Drawing.Point(1043, 45);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(80, 30);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnAll
             // 
@@ -181,7 +187,7 @@
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Location = new System.Drawing.Point(20, 160);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(560, 30);
+            this.pnlHeader.Size = new System.Drawing.Size(661, 30);
             this.pnlHeader.TabIndex = 9;
             // 
             // label1
@@ -225,12 +231,55 @@
             this.dgvLeaveRequests.Name = "dgvLeaveRequests";
             this.dgvLeaveRequests.ReadOnly = true;
             this.dgvLeaveRequests.RowHeadersVisible = false;
-            this.dgvLeaveRequests.Size = new System.Drawing.Size(560, 321);
+            this.dgvLeaveRequests.Size = new System.Drawing.Size(661, 350);
             this.dgvLeaveRequests.TabIndex = 10;
+            // 
+            // colRequestID
+            // 
+            this.colRequestID.HeaderText = "Request ID";
+            this.colRequestID.Name = "colRequestID";
+            this.colRequestID.ReadOnly = true;
+            // 
+            // colEmployee
+            // 
+            this.colEmployee.HeaderText = "Employee";
+            this.colEmployee.Name = "colEmployee";
+            this.colEmployee.ReadOnly = true;
+            // 
+            // colLeaveType
+            // 
+            this.colLeaveType.HeaderText = "Leave Type";
+            this.colLeaveType.Name = "colLeaveType";
+            this.colLeaveType.ReadOnly = true;
+            // 
+            // colStartDate
+            // 
+            this.colStartDate.HeaderText = "Start Date";
+            this.colStartDate.Name = "colStartDate";
+            this.colStartDate.ReadOnly = true;
+            // 
+            // colEndDate
+            // 
+            this.colEndDate.HeaderText = "End Date";
+            this.colEndDate.Name = "colEndDate";
+            this.colEndDate.ReadOnly = true;
+            // 
+            // colStatus
+            // 
+            this.colStatus.HeaderText = "Status";
+            this.colStatus.Name = "colStatus";
+            this.colStatus.ReadOnly = true;
+            // 
+            // colApprovedBy
+            // 
+            this.colApprovedBy.HeaderText = "Approved By";
+            this.colApprovedBy.Name = "colApprovedBy";
+            this.colApprovedBy.ReadOnly = true;
             // 
             // pnlDetails
             // 
-            this.pnlDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlDetails.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlDetails.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlDetails.Controls.Add(this.txtReason);
@@ -248,23 +297,43 @@
             this.pnlDetails.Controls.Add(this.cboEmployee);
             this.pnlDetails.Controls.Add(this.lblEmployee);
             this.pnlDetails.Controls.Add(this.label4);
-            this.pnlDetails.Location = new System.Drawing.Point(624, 160);
+            this.pnlDetails.Location = new System.Drawing.Point(716, 160);
             this.pnlDetails.Name = "pnlDetails";
-            this.pnlDetails.Size = new System.Drawing.Size(250, 430);
+            this.pnlDetails.Size = new System.Drawing.Size(343, 430);
             this.pnlDetails.TabIndex = 11;
+            // 
+            // txtReason
+            // 
+            this.txtReason.Location = new System.Drawing.Point(15, 320);
+            this.txtReason.Multiline = true;
+            this.txtReason.Name = "txtReason";
+            this.txtReason.Size = new System.Drawing.Size(305, 36);
+            this.txtReason.TabIndex = 28;
+            this.txtReason.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(15, 370);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(79, 15);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Approved By";
             // 
             // cboApprovedBy
             // 
+            this.cboApprovedBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboApprovedBy.FormattingEnabled = true;
             this.cboApprovedBy.Items.AddRange(new object[] {
+            "- Select Approver -",
             "Pending",
             "Approved",
             "Rejected"});
             this.cboApprovedBy.Location = new System.Drawing.Point(15, 390);
             this.cboApprovedBy.Name = "cboApprovedBy";
-            this.cboApprovedBy.Size = new System.Drawing.Size(220, 21);
+            this.cboApprovedBy.Size = new System.Drawing.Size(305, 21);
             this.cboApprovedBy.TabIndex = 26;
-            this.cboApprovedBy.Text = "- Select Approver -";
             // 
             // label9
             // 
@@ -280,28 +349,29 @@
             // 
             this.dtpEndDate.Location = new System.Drawing.Point(15, 220);
             this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(220, 20);
+            this.dtpEndDate.Size = new System.Drawing.Size(305, 20);
             this.dtpEndDate.TabIndex = 24;
             // 
             // dtpStartDate
             // 
             this.dtpStartDate.Location = new System.Drawing.Point(15, 170);
             this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(220, 20);
+            this.dtpStartDate.Size = new System.Drawing.Size(305, 20);
             this.dtpStartDate.TabIndex = 23;
             // 
             // cboStatus
             // 
+            this.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboStatus.FormattingEnabled = true;
             this.cboStatus.Items.AddRange(new object[] {
+            "- Select Status -",
             "Pending",
             "Approved",
             "Rejected"});
             this.cboStatus.Location = new System.Drawing.Point(15, 270);
             this.cboStatus.Name = "cboStatus";
-            this.cboStatus.Size = new System.Drawing.Size(220, 21);
+            this.cboStatus.Size = new System.Drawing.Size(305, 21);
             this.cboStatus.TabIndex = 22;
-            this.cboStatus.Text = "- Select Status -";
             // 
             // label8
             // 
@@ -335,8 +405,10 @@
             // 
             // cboLeaveType
             // 
+            this.cboLeaveType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLeaveType.FormattingEnabled = true;
             this.cboLeaveType.Items.AddRange(new object[] {
+            "- Select Leave Type -",
             "Vacation Leave",
             "Sick Leave",
             "Emergency Leave",
@@ -345,9 +417,8 @@
             "Bereavement Leave"});
             this.cboLeaveType.Location = new System.Drawing.Point(15, 120);
             this.cboLeaveType.Name = "cboLeaveType";
-            this.cboLeaveType.Size = new System.Drawing.Size(220, 21);
+            this.cboLeaveType.Size = new System.Drawing.Size(305, 21);
             this.cboLeaveType.TabIndex = 16;
-            this.cboLeaveType.Text = "- Select Leave Type -";
             // 
             // label5
             // 
@@ -361,12 +432,12 @@
             // 
             // cboEmployee
             // 
+            this.cboEmployee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEmployee.FormattingEnabled = true;
             this.cboEmployee.Location = new System.Drawing.Point(15, 70);
             this.cboEmployee.Name = "cboEmployee";
-            this.cboEmployee.Size = new System.Drawing.Size(220, 21);
+            this.cboEmployee.Size = new System.Drawing.Size(305, 21);
             this.cboEmployee.TabIndex = 14;
-            this.cboEmployee.Text = "- Select Employee -";
             // 
             // lblEmployee
             // 
@@ -388,71 +459,54 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Leave Request Details";
             // 
-            // label10
+            // btnAddRequest
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(15, 370);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 15);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Approved By";
+            this.btnAddRequest.BackColor = System.Drawing.Color.Teal;
+            this.btnAddRequest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddRequest.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRequest.ForeColor = System.Drawing.Color.White;
+            this.btnAddRequest.Location = new System.Drawing.Point(26, 584);
+            this.btnAddRequest.Name = "btnAddRequest";
+            this.btnAddRequest.Size = new System.Drawing.Size(180, 45);
+            this.btnAddRequest.TabIndex = 12;
+            this.btnAddRequest.Text = "Add Request";
+            this.btnAddRequest.UseVisualStyleBackColor = false;
+            this.btnAddRequest.Click += new System.EventHandler(this.btnApprove_Click);
             // 
-            // txtReason
+            // btnUpdate
             // 
-            this.txtReason.Location = new System.Drawing.Point(15, 320);
-            this.txtReason.Multiline = true;
-            this.txtReason.Name = "txtReason";
-            this.txtReason.Size = new System.Drawing.Size(220, 36);
-            this.txtReason.TabIndex = 28;
-            this.txtReason.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.btnUpdate.BackColor = System.Drawing.Color.Teal;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(257, 584);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(180, 45);
+            this.btnUpdate.TabIndex = 13;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // colApprovedBy
+            // btnDelete
             // 
-            this.colApprovedBy.HeaderText = "Approved By";
-            this.colApprovedBy.Name = "colApprovedBy";
-            this.colApprovedBy.ReadOnly = true;
-            // 
-            // colStatus
-            // 
-            this.colStatus.HeaderText = "Status";
-            this.colStatus.Name = "colStatus";
-            this.colStatus.ReadOnly = true;
-            // 
-            // colEndDate
-            // 
-            this.colEndDate.HeaderText = "End Date";
-            this.colEndDate.Name = "colEndDate";
-            this.colEndDate.ReadOnly = true;
-            // 
-            // colStartDate
-            // 
-            this.colStartDate.HeaderText = "Start Date";
-            this.colStartDate.Name = "colStartDate";
-            this.colStartDate.ReadOnly = true;
-            // 
-            // colLeaveType
-            // 
-            this.colLeaveType.HeaderText = "Leave Type";
-            this.colLeaveType.Name = "colLeaveType";
-            this.colLeaveType.ReadOnly = true;
-            // 
-            // colEmployee
-            // 
-            this.colEmployee.HeaderText = "Employee";
-            this.colEmployee.Name = "colEmployee";
-            this.colEmployee.ReadOnly = true;
-            // 
-            // colRequestID
-            // 
-            this.colRequestID.HeaderText = "Request ID";
-            this.colRequestID.Name = "colRequestID";
-            this.colRequestID.ReadOnly = true;
+            this.btnDelete.BackColor = System.Drawing.Color.Firebrick;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(489, 584);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(180, 45);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // ucLeaveRequestUD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnAddRequest);
             this.Controls.Add(this.pnlDetails);
             this.Controls.Add(this.dgvLeaveRequests);
             this.Controls.Add(this.pnlHeader);
@@ -466,7 +520,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTitle);
             this.Name = "ucLeaveRequestUD";
-            this.Size = new System.Drawing.Size(913, 630);
+            this.Size = new System.Drawing.Size(1126, 689);
             this.Load += new System.EventHandler(this.ucPayrollUD_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
@@ -515,5 +569,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colEndDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn colApprovedBy;
+        private System.Windows.Forms.Button btnAddRequest;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

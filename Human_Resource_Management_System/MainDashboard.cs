@@ -1,4 +1,6 @@
-﻿using System;
+﻿using infomanagement;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -156,6 +158,96 @@ namespace Human_Resource_Management_System
         private void progressBarResearchDev_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void RefreshDashboardStats_click(object sender, EventArgs e)
+        {
+            DatabaseConnection db = new DatabaseConnection();
+
+
+            using (MySqlConnection conn = db.GetConnection())
+            {
+                conn.Open();
+
+
+                // TOTAL EMPLOYEES
+                string employeeQuery =
+                "SELECT COUNT(*) FROM employee";
+
+
+                MySqlCommand cmdEmployee =
+                new MySqlCommand(employeeQuery, conn);
+
+
+                int totalEmployees =
+                Convert.ToInt32(cmdEmployee.ExecuteScalar());
+
+
+                lblNumTE.Text = totalEmployees.ToString();
+
+
+
+                // LATE TODAY
+                string lateQuery =
+                @"SELECT COUNT(*) 
+          FROM attendance
+          WHERE attendanceDate = CURDATE()
+          AND clockTimeIn > '08:00:00'";
+
+
+                MySqlCommand cmdLate =
+                new MySqlCommand(lateQuery, conn);
+
+
+                int lateToday =
+                Convert.ToInt32(cmdLate.ExecuteScalar());
+
+
+                lblNumLT.Text = lateToday.ToString();
+
+
+
+                // ON LEAVE TODAY
+                string leaveQuery =
+                @"SELECT COUNT(*)
+          FROM leaverequest
+          WHERE CURDATE()
+          BETWEEN startDate AND endDate
+          AND status='Approved'";
+
+
+                MySqlCommand cmdLeave =
+                new MySqlCommand(leaveQuery, conn);
+
+
+                int onLeave =
+                Convert.ToInt32(cmdLeave.ExecuteScalar());
+
+
+                lblNumOLT.Text = onLeave.ToString();
+
+
+
+                // PENDING LEAVE REQUEST
+                string pendingQuery =
+                @"SELECT COUNT(*)
+          FROM leaverequest
+          WHERE status='Pending'";
+
+
+                MySqlCommand cmdPending =
+                new MySqlCommand(pendingQuery, conn);
+
+
+                int pending =
+                Convert.ToInt32(cmdPending.ExecuteScalar());
+
+
+                lblNumPLR.Text = pending.ToString();
+
+
+            }
         }
     }
 }

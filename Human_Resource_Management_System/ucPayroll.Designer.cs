@@ -111,6 +111,8 @@
             this.txtSearch.Size = new System.Drawing.Size(300, 25);
             this.txtSearch.TabIndex = 3;
             this.txtSearch.Text = "Enter employee name or ID";
+            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
+            this.txtSearch.Leave += new System.EventHandler(this.txtSearch_Leave);
             // 
             // btnSearch
             // 
@@ -123,6 +125,7 @@
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pnlPayrollHeader
             // 
@@ -165,66 +168,77 @@
             this.dvgPayroll.Name = "dvgPayroll";
             this.dvgPayroll.ReadOnly = true;
             this.dvgPayroll.RowHeadersVisible = false;
+            this.dvgPayroll.RowHeadersWidth = 51;
             this.dvgPayroll.Size = new System.Drawing.Size(650, 350);
             this.dvgPayroll.TabIndex = 6;
             // 
             // PayrollID
             // 
             this.PayrollID.HeaderText = "Payroll ID";
+            this.PayrollID.MinimumWidth = 6;
             this.PayrollID.Name = "PayrollID";
             this.PayrollID.ReadOnly = true;
             // 
             // EmployeeID
             // 
             this.EmployeeID.HeaderText = "Employee ID";
+            this.EmployeeID.MinimumWidth = 6;
             this.EmployeeID.Name = "EmployeeID";
             this.EmployeeID.ReadOnly = true;
             // 
             // EmployeeName
             // 
             this.EmployeeName.HeaderText = "Employee Name";
+            this.EmployeeName.MinimumWidth = 6;
             this.EmployeeName.Name = "EmployeeName";
             this.EmployeeName.ReadOnly = true;
             // 
             // PayPeriodStart
             // 
             this.PayPeriodStart.HeaderText = "Pay Period Start";
+            this.PayPeriodStart.MinimumWidth = 6;
             this.PayPeriodStart.Name = "PayPeriodStart";
             this.PayPeriodStart.ReadOnly = true;
             // 
             // PayPeriodEnd
             // 
             this.PayPeriodEnd.HeaderText = "Pay Period End";
+            this.PayPeriodEnd.MinimumWidth = 6;
             this.PayPeriodEnd.Name = "PayPeriodEnd";
             this.PayPeriodEnd.ReadOnly = true;
             // 
             // GrossPay
             // 
             this.GrossPay.HeaderText = "Gross Pay";
+            this.GrossPay.MinimumWidth = 6;
             this.GrossPay.Name = "GrossPay";
             this.GrossPay.ReadOnly = true;
             // 
             // Deductions
             // 
             this.Deductions.HeaderText = "Deductions";
+            this.Deductions.MinimumWidth = 6;
             this.Deductions.Name = "Deductions";
             this.Deductions.ReadOnly = true;
             // 
             // NetPay
             // 
             this.NetPay.HeaderText = "Net Pay";
+            this.NetPay.MinimumWidth = 6;
             this.NetPay.Name = "NetPay";
             this.NetPay.ReadOnly = true;
             // 
             // PaymentDate
             // 
             this.PaymentDate.HeaderText = "Payment Date";
+            this.PaymentDate.MinimumWidth = 6;
             this.PaymentDate.Name = "PaymentDate";
             this.PaymentDate.ReadOnly = true;
             // 
             // pnlPayrollDetails
             // 
-            this.pnlPayrollDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlPayrollDetails.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlPayrollDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPayrollDetails.Controls.Add(this.dtpPaymentDate);
             this.pnlPayrollDetails.Controls.Add(this.label13);
@@ -243,7 +257,7 @@
             this.pnlPayrollDetails.Controls.Add(this.txtPayrollID);
             this.pnlPayrollDetails.Controls.Add(this.label6);
             this.pnlPayrollDetails.Controls.Add(this.label5);
-            this.pnlPayrollDetails.Location = new System.Drawing.Point(700, 190);
+            this.pnlPayrollDetails.Location = new System.Drawing.Point(732, 110);
             this.pnlPayrollDetails.Name = "pnlPayrollDetails";
             this.pnlPayrollDetails.Size = new System.Drawing.Size(320, 549);
             this.pnlPayrollDetails.TabIndex = 7;
@@ -289,7 +303,8 @@
             this.txtDeductions.Name = "txtDeductions";
             this.txtDeductions.Size = new System.Drawing.Size(280, 20);
             this.txtDeductions.TabIndex = 12;
-            this.txtDeductions.Text = "Enter deductions";
+            this.txtDeductions.TextChanged += new System.EventHandler(this.txtDeductions_TextChanged);
+            this.txtDeductions.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDeductions_KeyPress);
             // 
             // label11
             // 
@@ -307,7 +322,8 @@
             this.txtGrossPay.Name = "txtGrossPay";
             this.txtGrossPay.Size = new System.Drawing.Size(280, 20);
             this.txtGrossPay.TabIndex = 10;
-            this.txtGrossPay.Text = "Enter gross pay";
+            this.txtGrossPay.TextChanged += new System.EventHandler(this.txtGrossPay_TextChanged);
+            this.txtGrossPay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGrossPay_KeyPress);
             // 
             // label10
             // 
@@ -355,12 +371,12 @@
             // 
             // cboEmployee
             // 
+            this.cboEmployee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEmployee.FormattingEnabled = true;
             this.cboEmployee.Location = new System.Drawing.Point(15, 140);
             this.cboEmployee.Name = "cboEmployee";
             this.cboEmployee.Size = new System.Drawing.Size(280, 21);
             this.cboEmployee.TabIndex = 4;
-            this.cboEmployee.Text = "- Select Employee -";
             // 
             // label7
             // 
@@ -412,6 +428,7 @@
             this.btnGenerate.TabIndex = 8;
             this.btnGenerate.Text = "Generate Payroll";
             this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // btnUpdate
             // 
@@ -425,6 +442,7 @@
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update Payroll";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -438,6 +456,7 @@
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Delete Payroll";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // ucPayroll
             // 
@@ -456,7 +475,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ucPayroll";
-            this.Size = new System.Drawing.Size(1050, 864);
+            this.Size = new System.Drawing.Size(1126, 689);
             this.pnlPayrollHeader.ResumeLayout(false);
             this.pnlPayrollHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgPayroll)).EndInit();

@@ -14,7 +14,6 @@ namespace infomanagement
         //change the password to the password  set in the connection
         private static readonly string connectionString = "server=mysql-pupacadportal-pupacadportal.h.aivencloud.com;port=15204;database=infomanagement;uid=avnadmin;password=\"YOUR_PASSWORD_HERE\"";
 
-       
         public static MySqlConnection GetConnection()
         {
             return new MySqlConnection(connectionString);

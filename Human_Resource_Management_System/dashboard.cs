@@ -1,4 +1,4 @@
-﻿using infomanagement;
+﻿using Human_Resource_Management_System;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.Cmp;
 using System;

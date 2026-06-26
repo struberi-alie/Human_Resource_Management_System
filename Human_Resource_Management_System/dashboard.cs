@@ -390,5 +390,10 @@ namespace Human_Resource_Management_System
                 }
             }
         }
+
+        private void dgvEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

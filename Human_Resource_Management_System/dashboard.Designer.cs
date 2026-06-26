@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlStudentDetails = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmployeeId = new System.Windows.Forms.TextBox();
@@ -69,10 +70,13 @@
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hiredate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.regdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.pnlStudentDetails.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlLabel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlStudentDetails
@@ -459,8 +463,18 @@
             // 
             // dgvEmployee
             // 
-            this.dgvEmployee.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvEmployee.ColumnHeadersHeight = 29;
+            this.dgvEmployee.AllowUserToResizeColumns = false;
+            this.dgvEmployee.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
+            this.dgvEmployee.BackgroundColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmployee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEmployee.ColumnHeadersHeight = 50;
             this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.empID,
             this.firstname,
@@ -473,13 +487,14 @@
             this.hiredate,
             this.regdate});
             this.dgvEmployee.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvEmployee.Location = new System.Drawing.Point(4, 531);
+            this.dgvEmployee.Location = new System.Drawing.Point(4, 493);
             this.dgvEmployee.Name = "dgvEmployee";
             this.dgvEmployee.RowHeadersWidth = 51;
             this.dgvEmployee.RowTemplate.Height = 24;
-            this.dgvEmployee.Size = new System.Drawing.Size(1244, 256);
+            this.dgvEmployee.Size = new System.Drawing.Size(1055, 261);
             this.dgvEmployee.TabIndex = 10;
             this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick_1);
+            this.dgvEmployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellContentClick);
             // 
             // empID
             // 
@@ -550,11 +565,35 @@
             this.regdate.HeaderText = "REGULARIZATION DATE";
             this.regdate.MinimumWidth = 6;
             this.regdate.Name = "regdate";
-            this.regdate.Width = 193;
+            this.regdate.Width = 176;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Location = new System.Drawing.Point(4, 462);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1055, 41);
+            this.panel1.TabIndex = 9;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(12, 12);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 16);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "| Employees";
             // 
             // dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvEmployee);
             this.Controls.Add(this.pnlStudentDetails);
             this.Controls.Add(this.pnlLabel1);
@@ -569,6 +608,8 @@
             this.pnlLabel1.ResumeLayout(false);
             this.pnlLabel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -615,5 +656,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn regdate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtEmployeeId;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label12;
     }
 }

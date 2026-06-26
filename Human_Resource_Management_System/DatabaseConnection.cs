@@ -9,15 +9,10 @@ namespace infomanagement
 {
     
     public static class DatabaseConnection
-    {
-        
-        private static readonly string server = "localhost";
-        private static readonly string database = "infomanagement";
-        private static readonly string uid = "root";       
-        private static readonly string password = "stormxoreo@0924";      
+    {   
 
-        
-        private static readonly string connectionString = $"server={server};database={database};uid={uid};password={password};Convert Zero Datetime=True;";
+        //change the password to the password  set in the connection
+        private static readonly string connectionString = "server=mysql-pupacadportal-pupacadportal.h.aivencloud.com;port=15204;database=infomanagement;uid=avnadmin;password=\"YOUR_PASSWORD_HERE\"";
 
        
         public static MySqlConnection GetConnection()

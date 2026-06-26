@@ -95,6 +95,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ash.Designer.cs">
+      <DependentUpon>Ash.cs</DependentUpon>
+    </Compile>
     <Compile Include="dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,18 +123,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ucDepartment.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucDepartment.Designer.cs">
       <DependentUpon>ucDepartment.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucLeaveRequest.cs">
+    <Compile Include="ucPayroll.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucLeaveRequest.Designer.cs">
-      <DependentUpon>ucLeaveRequest.cs</DependentUpon>
+    <Compile Include="ucPayroll.Designer.cs">
+      <DependentUpon>ucPayroll.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucLeaveRequestUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLeaveRequestUD.Designer.cs">
+      <DependentUpon>ucLeaveRequestUD.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ash.resx">
+      <DependentUpon>Ash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,19 +159,18 @@
       <DependentUpon>MainDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="ucDepartment.resx">
       <DependentUpon>ucDepartment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucLeaveRequest.resx">
-      <DependentUpon>ucLeaveRequest.cs</DependentUpon>
+    <EmbeddedResource Include="ucLeaveRequestUD.resx">
+      <DependentUpon>ucLeaveRequestUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPayroll.resx">
+      <DependentUpon>ucPayroll.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -167,10 +186,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="db_secret.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

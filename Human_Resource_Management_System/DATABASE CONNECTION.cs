@@ -9,10 +9,15 @@ namespace Human_Resource_Management_System
 {
     public class DatabaseConnection
     {
-        private string connectionString =
+        private static string connectionString =
             "Server=your_server;Database=infomanagement;Uid=your_username;Pwd=your_password;";
 
-        public MySqlConnection GetConnection()
+        public static string ConnectionString
+        {
+            get { return connectionString; }
+        }
+
+        public static MySqlConnection GetConnection()
         {
             MySqlConnection conn = new MySqlConnection(connectionString);
 

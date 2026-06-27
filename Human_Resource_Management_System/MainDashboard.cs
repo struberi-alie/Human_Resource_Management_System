@@ -165,10 +165,7 @@ namespace Human_Resource_Management_System
 
         private void RefreshDashboardStats_click(object sender, EventArgs e)
         {
-            DatabaseConnection db = new DatabaseConnection();
-
-
-            using (MySqlConnection conn = db.GetConnection())
+            using (MySqlConnection conn = DatabaseConnection.GetConnection())
             {
                 conn.Open();
 

@@ -129,6 +129,8 @@
             this.gbAdd.Text = "Add New Department";
             // 
             // cmbLocation
+<<<<<<< HEAD
+=======
             // 
             this.cmbLocation.FormattingEnabled = true;
             this.cmbLocation.Location = new System.Drawing.Point(10, 231);
@@ -169,6 +171,48 @@
             this.label4.Text = "Department Name";
             // 
             // label3
+>>>>>>> cd43cdc873e09b8454b39bf504821ef64a51210e
+            // 
+            this.cmbLocation.FormattingEnabled = true;
+            this.cmbLocation.Location = new System.Drawing.Point(10, 231);
+            this.cmbLocation.Name = "cmbLocation";
+            this.cmbLocation.Size = new System.Drawing.Size(444, 28);
+            this.cmbLocation.TabIndex = 6;
+            // 
+<<<<<<< HEAD
+            // txtboxName
+            // 
+            this.txtboxName.Location = new System.Drawing.Point(10, 155);
+            this.txtboxName.Name = "txtboxName";
+            this.txtboxName.Size = new System.Drawing.Size(444, 27);
+            this.txtboxName.TabIndex = 4;
+            // 
+            // txtboxID
+            // 
+            this.txtboxID.Location = new System.Drawing.Point(10, 73);
+            this.txtboxID.Name = "txtboxID";
+            this.txtboxID.Size = new System.Drawing.Size(444, 27);
+            this.txtboxID.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 208);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Location";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 132);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Department Name";
+            // 
+            // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 50);
@@ -178,6 +222,8 @@
             this.label3.Text = "Department ID";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+=======
+>>>>>>> cd43cdc873e09b8454b39bf504821ef64a51210e
             // gbAction
             // 
             this.gbAction.Controls.Add(this.btnClear);
@@ -201,6 +247,10 @@
             this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Clear/Refresh";
             this.btnClear.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+=======
+>>>>>>> cd43cdc873e09b8454b39bf504821ef64a51210e
             // 
             // btnDelete
             // 
@@ -212,6 +262,10 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+=======
+>>>>>>> cd43cdc873e09b8454b39bf504821ef64a51210e
             // 
             // btnUpdate
             // 
@@ -223,6 +277,10 @@
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+=======
+>>>>>>> cd43cdc873e09b8454b39bf504821ef64a51210e
             // 
             // btnAdd
             // 
@@ -234,6 +292,10 @@
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+=======
+>>>>>>> cd43cdc873e09b8454b39bf504821ef64a51210e
             // 
             // gbUpdate
             // 

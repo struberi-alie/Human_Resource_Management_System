@@ -55,7 +55,7 @@ namespace Human_Resource_Management_System
             cmbShift.Text = "   - Select Schedule -";
 
 
-            MessageBox.Show("Refresh Successfully!", "System Update Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Refresh Successfully! \nPress OK", "System Update Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
             dashboard_Load(sender, e);
